@@ -12,7 +12,7 @@ metadata:
 
 One of the neat little features of my homegrown microblogging platform is that is has a nifty hashtag autocomplete system like you can find on Twitter and Instagram - you hit the `#` key and as you continue typing, suggestions of existing tags appear in a dropdown menu.
 
-![](/assets/images/N6NuRXBGgWfKR1fw0MDJ3OTnXb3uwFxwXMF1B4HY.webp)
+![Animated demonstration of hashtag autocomplete suggestions appearing while composing a microblog post](/assets/images/N6NuRXBGgWfKR1fw0MDJ3OTnXb3uwFxwXMF1B4HY.webp)
 
 It was surprisingly quick and easy to implement using a number of existing packages and services, so I thought I would show you how I did it.
 

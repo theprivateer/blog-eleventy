@@ -116,6 +116,13 @@ test("metadata title overrides only the document title", async () => {
   assert.match(fallbackPage, /<title>Phil Stephens \| Contact<\/title>/);
 });
 
+test("bare Markdown URLs become clickable links", async () => {
+  const followPage = await readFile(path.join(outputDirectory, "follow/index.html"), "utf8");
+
+  assert.match(followPage, /<a href="https:\/\/philstephens\.com\/feed\/posts\/rss">https:\/\/philstephens\.com\/feed\/posts\/rss<\/a>/);
+  assert.match(followPage, /<a href="https:\/\/github\.com\/theprivateer">https:\/\/github\.com\/theprivateer<\/a>/);
+});
+
 test("code pages load Prism with the Twilight theme on demand", async () => {
   const codePage = await readFile(path.join(outputDirectory, "blog/adding-reading-time-to-a-jigsaw-blog/index.html"), "utf8");
   const contentPage = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
@@ -127,7 +134,7 @@ test("code pages load Prism with the Twilight theme on demand", async () => {
   assert.doesNotMatch(contentPage, /cdnjs\.cloudflare\.com\/ajax\/libs\/prism/);
 });
 
-test("content images are local and copied into the built site", async () => {
+test("content images have alt text and local images are copied into the built site", async () => {
   const contentDirectory = path.resolve("src/content");
   const sourceImageDirectory = path.resolve("src/assets/images");
   const builtImageDirectory = path.join(outputDirectory, "assets/images");
@@ -140,8 +147,12 @@ test("content images are local and copied into the built site", async () => {
 
     assert.doesNotMatch(markdown, /https?:\/\/assets\.philstephens\.com\//, relativePath);
 
-    for (const match of markdown.matchAll(/\/assets\/images\/([^)\s"'<>]+)/g)) {
-      referencedImages.add(match[1]);
+    for (const match of markdown.matchAll(/!\[([^\]]*)\]\(([^)\s"'<>]+)\)/g)) {
+      assert.ok(match[1].trim(), `image alt text: ${relativePath}`);
+
+      if (match[2].startsWith("/assets/images/")) {
+        referencedImages.add(match[2].slice("/assets/images/".length));
+      }
     }
   }
 

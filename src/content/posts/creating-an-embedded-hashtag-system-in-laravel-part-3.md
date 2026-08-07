@@ -118,4 +118,4 @@ Route::get('api/tags', 'Api\TagsController@index');
 
 Ultimately the end user experience is largely the same as the Algolia method.  We don't benefit from typo-tolerance out of the box, but it's up to you to decide if you really need it.  This implementation is entirely self-contained, and with careful monitoring and tuning should scale well without any performance hits.
 
-![](/assets/images/Hx6BGxLVN9QmX6n9yWDocC59n1UWatXHzV9a0Xfb.webp)
+![Animated demonstration of self-hosted hashtag suggestions beneath the post editor](/assets/images/Hx6BGxLVN9QmX6n9yWDocC59n1UWatXHzV9a0Xfb.webp)

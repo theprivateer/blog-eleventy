@@ -18,7 +18,7 @@ I had a number of non-fiction books on my hit-list and I'm glad to say between [
 
 ## REMOTE - Office Not Required<br><small>by Jason Fried and David Heinemeier Hansson</small>
 
-![](/assets/images/GuaxibWIWapyt6WGJfwRjl7pMQyXSous13x9t3c0.webp)
+![Cover of Remote: Office Not Required by Jason Fried and David Heinemeier Hansson](/assets/images/GuaxibWIWapyt6WGJfwRjl7pMQyXSous13x9t3c0.webp)
 
 Since starting my [new remote role](/blog/working-remotely) I have been particularly interested in improving the way in which we work.  Whilst the company is completely distributed across Australia, the culture and processes to support this are still not optimal.  I had previously read [Getting Real](https://gettingreal.37signals.com/) and [REWORK](https://37signals.com/rework) by the guys at 37signals and was really interested by their take on remote working.
 
@@ -33,7 +33,7 @@ One recurring theme that I found running through the book when it came to anecdo
 
 ## Business for Punks<br><small>by James Watt</small>
 
-![](/assets/images/DFhcMYBotahMuWNMHsngzWARagaWPQfoMbTTl2bl.webp)
+![Two editions of Business for Punks by James Watt](/assets/images/DFhcMYBotahMuWNMHsngzWARagaWPQfoMbTTl2bl.webp)
 
 My wife bought me the first edition hardback of this book a couple of Christmas' ago - largely because [BrewDog](https://www.brewdog.com/) was my favourite brewer and bar whilst living in Edinburgh, rather than any particular desire to run a business.
 
@@ -54,7 +54,7 @@ Over the years I have had many ideas that I couldn't necessary classify as busin
 
 ## Do Fly - Find your way. Make a living. Be your best self.<br><small>by Gavin Strange</small>
 
-![](/assets/images/IDZ34zYTxFWG86tcwQTp97yaosWESJq5sYG2iWim.webp)
+![Cover of Do Fly by Gavin Strange](/assets/images/IDZ34zYTxFWG86tcwQTp97yaosWESJq5sYG2iWim.webp)
 
 I've been an avid follower of the work and career of designer Gavin Strange for over a decade, since the days of [PillBoy](https://www.flickr.com/photos/jamfactory/sets/1494047/) and [Xynthetic](https://www.flickr.com/photos/jamfactory/sets/72057594077860777), and have always been inspired by the level of passion and excitement that he brings to his work.  Also the sheer volume of side-/passion-projects that he constantly seems to have on the go, whilst juggling a full-time job, married life and parenthood, is humbling.
 

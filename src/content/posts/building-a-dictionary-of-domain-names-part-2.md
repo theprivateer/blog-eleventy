@@ -265,7 +265,7 @@ The update to the UI is a simple one - in `resources\views\words\index.blade.php
 </div>
 ```
 
-![](/assets/images/3mgTgohYBF410yw8LSylI6knm4B814xfNgziFQAc.webp)
+![Domain Dictionary showing the randomly selected available domain Clubish](/assets/images/3mgTgohYBF410yw8LSylI6knm4B814xfNgziFQAc.webp)
 
 
 ## Moar Domains!

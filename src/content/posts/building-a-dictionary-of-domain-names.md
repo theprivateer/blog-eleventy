@@ -669,7 +669,7 @@ Route::get('words/{letter}', 'WordsController@index');
 ```
 ## The End Result
 
-![](/assets/images/6kH3muvlhAQAW5e8IJeTUOt2yZbS2pVIgOGsLUqD.webp)
+![Domain Dictionary showing an alphabetical list of domain names and definitions](/assets/images/6kH3muvlhAQAW5e8IJeTUOt2yZbS2pVIgOGsLUqD.webp)
 
 And there we have it - it's not going to win any design awards but it has achieved everything I set out to do in the first instance:
 

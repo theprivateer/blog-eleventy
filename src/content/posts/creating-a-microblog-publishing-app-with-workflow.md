@@ -193,21 +193,21 @@ class PostController extends Controller
 
 Now we can jump into Workflow and wire everything up. For this project we are going to use the following actions: _Text_, _URL_ and _Get Contents of URL_.  You can find all of the available actions by swiping right on the workflow, and then using the search bar at the top.
 
-![](/assets/images/mmOQe7czpvUh2fxOWu4rncm6FyrTO0YKRERy6USZ.webp)
+![A blank Workflow editor on an iPhone](/assets/images/mmOQe7czpvUh2fxOWu4rncm6FyrTO0YKRERy6USZ.webp)
 
-![](/assets/images/gOyuafIaJD4yf2MD4Q23z3CbLMn1S3biyEYnFs6w.webp)
+![Workflow's action browser showing calendar, contact and document actions](/assets/images/gOyuafIaJD4yf2MD4Q23z3CbLMn1S3biyEYnFs6w.webp)
 
 Start by dragging a _Text_ action into the Workflow.  Press on the text area and then select `Ask When Run` from the variables list.
 
-![](/assets/images/600HTKalBgJ9d4Wu3LF42uarOjR383z53lAbWxBW.webp)
+![A Workflow Text action configured with the Ask When Run variable](/assets/images/600HTKalBgJ9d4Wu3LF42uarOjR383z53lAbWxBW.webp)
 
 Next add a _URL_ action and enter the full URL to the endpoint that we created earlier.  If you are developing locally you can use something like `ngrok`, which is bundled with Laravel [Valet](https://laravel.com/docs/5.4/valet#sharing-sites) and [Homestead](https://laravel.com/docs/5.4/homestead), to make your local machine visible to the internet.
 
-![](/assets/images/1k8Dwqu5BvMQlvOjBFbvseXGDDp1GhTQ0d6dM2OP.webp)
+![Workflow containing Text and URL actions for the publishing endpoint](/assets/images/1k8Dwqu5BvMQlvOjBFbvseXGDDp1GhTQ0d6dM2OP.webp)
 
 Finally we can add a _Get Contents of URL_ to connect everything up.  Hit the `Advanced` button and change the method to `POST`.
 
-![](/assets/images/piySTwuxGGAiNCU4J1JSyMGeQaZXBj7WLGrTBsBj.webp)
+![Completed Workflow with a POST request, authorization header and request body](/assets/images/piySTwuxGGAiNCU4J1JSyMGeQaZXBj7WLGrTBsBj.webp)
 
 Next, add a header with the key `Authorization` and the value `Bearer` and the access key that we copied from Passport earlier.
 

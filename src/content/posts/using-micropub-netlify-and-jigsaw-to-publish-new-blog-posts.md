@@ -26,7 +26,7 @@ Under your GitHub profile go to settings and `Developer settings` > `Personal ac
 
 Create a new token with a descriptive name and only the `repo` scope checked.
 
-![](/assets/images/kCmG2CSV03dFHJE2otpLyVyHyYt4iMU4pcft4Msu.webp)
+![GitHub personal access token form with the repo scope selected](/assets/images/kCmG2CSV03dFHJE2otpLyVyHyYt4iMU4pcft4Msu.webp)
 
 ## Netlify setup
 
@@ -36,7 +36,7 @@ Let's add a new environment variable called `GITHUB_ACCESS_TOKEN` with the token
 
 Create a second environment variable called `TOKEN` with a [random value](https://www.random.org/strings/).
 
-![](/assets/images/3Qlz3JBCVZMxEb2LpNnn5CxM1j9EdyApsiGDTHrj.webp)
+![Netlify environment variables showing the TOKEN value masked](/assets/images/3Qlz3JBCVZMxEb2LpNnn5CxM1j9EdyApsiGDTHrj.webp)
 
 ## iA Writer publishing flow
 
@@ -183,13 +183,13 @@ Finally, let's set up iA Writer to post to our Netlify function.
 
 Under `Preferences` there's an `Accounts` section, where we can add a new `Micropub` account.
 
-![](/assets/images/Oag5SzvY7dRWAz1M2niIenzuq9Hnqh5NZEqbPhif.webp)
+![iA Writer dialog for adding a Micropub account with URL and token fields](/assets/images/Oag5SzvY7dRWAz1M2niIenzuq9Hnqh5NZEqbPhif.webp)
 
 To make it a bit easier for ourselves, we'll use a token to authenticate the endpoint and keep away from oAuth for now. In the "URL" field, fill in the root of your blog, not the API endpoint for Micropub.  As previously discussed iA Writer will attempt to discern the actual API endpoint itself - putting the API endpoint in this field here will cause iA Writer to hang until you force-close it.
 
 Once complete, we need to change one setting, we want iA Writer to send us the raw markdown, and not the content rendered by iA Writer in HTML. You can change this under the settings for the Micropub account.
 
-![](/assets/images/jUYJKjobCSOJZUasnBOwaepysHGiCkSVoZujf9k8.webp)
+![iA Writer Micropub format dialog with Markdown selected](/assets/images/jUYJKjobCSOJZUasnBOwaepysHGiCkSVoZujf9k8.webp)
 
 ## Publish an article
 

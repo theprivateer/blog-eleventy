@@ -23,7 +23,7 @@ I recently finished reading [Make Time](https://maketime.blog) where, like Digit
 
 This is now my Home Screen:
 
-![](/assets/images/jZj5dhU32FSjvvJ9Bvd98Og0CzWIMlFCoCZxsnaW.webp)
+![Minimal iPhone Home Screen containing Phone, Messages, WhatsApp and Music](/assets/images/jZj5dhU32FSjvvJ9Bvd98Og0CzWIMlFCoCZxsnaW.webp)
 
 Phone, messaging and music - that is more or less all that the _Light Phone II_ has, and that is all I think I'll need for now.
 
@@ -31,7 +31,7 @@ I'd prefer not to have to use WhatsApp but a number of my relatives insist on us
 
 I still have other apps installed on my phone, but they are hidden away in the App Library - a left or right-swipe away, and then type-to-search.
 
-![](/assets/images/HIoJJgu1a10yQq6013jD11gJ1NX4e9JTXHTEqDLl.webp)
+![Searching the iPhone App Library for an app](/assets/images/HIoJJgu1a10yQq6013jD11gJ1NX4e9JTXHTEqDLl.webp)
 
 I had already removed social media apps (I'm not on Facebook anyway), but have now gone and uninstalled any streaming apps (Netflix, Apple TV etc) as well as my email. The added step to access other apps gives just enough friction to stop me idly accessing apps that I would otherwise not need to.
 

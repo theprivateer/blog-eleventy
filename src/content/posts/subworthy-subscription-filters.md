@@ -18,7 +18,7 @@ Filters allow you to control what posts make it into your daily email from each 
 
 This can be particularly useful if your subscribe to a feed that posts daily recaps. Obviously you don't need to read a recap if you have the entire day's articles at your fingertips.  Personally I subscribe to the RSS feed at [TechCrunch](https://techcrunch.com).  They post daily recaps with the title 'Daily Crunch', so I simply apply a filter to this feed to exclude any posts where the title contains `daily crunch`.
 
-![](/assets/images/dLqZ7nP0gohxFTK414c7gHCdMxeAt8oDKhpmcbax.webp)
+![Subworthy subscription settings excluding posts whose titles contain “daily crunch”](/assets/images/dLqZ7nP0gohxFTK414c7gHCdMxeAt8oDKhpmcbax.webp)
 
 You can add your own filters to feeds be navigating to the subscription screen (click the title of the subscription on your homepage).  You can add as many filters as you like - they will currently act independently (i.e. if a post matches filter 1 OR filter 2 etc).  You can currently filter based on the post title and body, but this may be expanded in the future based on demand. There are also plans to be able to group filters to create more complex rules.
 

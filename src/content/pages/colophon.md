@@ -2,25 +2,20 @@
 title: Colophon
 draft: false
 created_at: 2026-01-05T14:39:05+10:00
-updated_at: 2026-03-26T09:23:15+10:00
+updated_at: 2026-08-07T22:48:17+10:00
 metadata:
     title: null
-    description: 'Built with Laravel, Filament and a custom hybrid CMS, this site uses Markdown, Cloudflare R2, server-side Shiki, no tracking and low CO2.'
+    description: 'A static Eleventy site built from Markdown, styled with Kelp UI and deployed to Cloudflare Workers & Pages.'
 ---
 
-This site is powered by a [lightweight custom hybrid database/flat-file CMS](https://github.com/theprivateer/blog).
+This site is built with [Eleventy](https://www.11ty.dev), a lightweight static site generator.
 
-Written using the Laravel PHP framework, it leverages [Filament](https://filamentphp.com) to provide a lightweight admin panel.
+Posts, notes, pages and categories are plain Markdown files stored alongside the site code. Eleventy combines them with a small collection of Nunjucks layouts to generate the complete site, including archives, pagination, feeds and the sitemap.
 
-Posts, pages and notes are all stored in the database for efficient retrieval / pagination (and eventually search), whilst being stored as Markdown files that can be version-controlled. Overkill? Perhaps. Likely to change? Probably.
+There is no database, runtime CMS or separate asset store. Content images live in the same repository as WebP files and are copied directly into the generated site.
 
-Uploaded assets are stored in a Cloudflare R2 bucket.
+The frontend uses the [Kelp](https://kelpui.com) HTML-first UI library and [Inclusive Sans](https://fonts.google.com/specimen/Inclusive+Sans). Pages containing code samples load [Prism](https://prismjs.com) with its Twilight theme; other pages do not load the syntax-highlighting assets.
 
-The whole thing is managed by [Laravel Forge](https://forge.laravel.com) and hosted on Laravel VPS, because life's too short for managing servers for a personal blog.
-
-The site uses the [Kelp](https://kelpui.com) HTML-first UI library for styling, and is set in [Inclusive Sans](https://fonts.google.com/specimen/Inclusive+Sans) for legibility. Code syntax highlighting is performed server-side using the [Shiki PHP](https://github.com/spatie/shiki-php) library.
-
-The domain is registered through GoDaddy, with DNS via Cloudflare.
+Each commit produces a directory of static HTML and assets, which is built and deployed by [Cloudflare Workers & Pages](https://pages.cloudflare.com). The domain is registered through GoDaddy, with DNS managed by Cloudflare.
 
 This site has [no tracking](https://themarkup.org/blacklight?location=eu&device=desktop&force=false&url=philstephens.com) and uses [less than 0.01g](https://www.websitecarbon.com/website/philstephens-com/) of CO<sub>2</sub> per visit.
-

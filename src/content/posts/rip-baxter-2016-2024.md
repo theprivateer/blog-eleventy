@@ -10,7 +10,7 @@ metadata:
     description: 'A heartfelt tribute to Baxter, a beloved King Charles Cavalier Spaniel, whose sudden decline and passing were faced from afar during a South Pacific cruise.'
 ---
 
-![](/assets/images/dT7pqRyOEzmaOwEAKFCO2UdDAgVVuiXdqCvbIGmX.webp)
+![Baxter, a King Charles Cavalier Spaniel, lying on a wooden deck](/assets/images/dT7pqRyOEzmaOwEAKFCO2UdDAgVVuiXdqCvbIGmX.webp)
 
 On 30 December we said goodbye to one of our dogs, a King Charles Cavalier Spaniel called **Baxter**. The kicker is that this happened whilst we were aboard a New Year cruise of the South Pacific islands so we couldn’t be there with him at the end.
 

@@ -14,7 +14,7 @@ I want to start sharing some tools - both software and hardware - that I use on 
 
 I want to kick things off with [One Switch](https://fireball.studio/oneswitch/), a simple Mac menubar app that I literally use every day.
 
-![](/assets/images/YdEy1F6dkJtzjW8YI1iGWHTCBme1D7fitflzNyV0.webp)
+![One Switch menu on a MacBook showing toggles for everyday system controls](/assets/images/YdEy1F6dkJtzjW8YI1iGWHTCBme1D7fitflzNyV0.webp)
 
 **One Switch** offers an easy-to-use shortcut to many of your everyday computer tasks. From hiding windows and switching to Dark Mode, to connecting your AirPods or locking your computer, One Switch saves you those extra few clicks in a simple package.
 

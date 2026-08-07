@@ -10,7 +10,7 @@ metadata:
     description: 'A renewed British passport replaces the old EU burgundy cover, marking a personal reminder of Brexit alongside life with Australian citizenship.'
 ---
 
-![](/assets/images/jTyxuaquWiQHZAyl4m5TUDfekJfgUFl547U5jmNL.webp)
+![A burgundy UK and Northern Ireland passport beside a new blue British passport](/assets/images/jTyxuaquWiQHZAyl4m5TUDfekJfgUFl547U5jmNL.webp)
 
 Typically I would travel on my Australian passport since gaining citizenship a few years ago. However today I received my renewed British passport, and it is the first time I have held a British passport that isn’t the burgundy of an EU passport.
 

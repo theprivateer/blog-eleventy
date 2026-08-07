@@ -26,7 +26,7 @@ That's where this story stopped being charming and started raising a bigger ques
 
 I don't think this is about saving time. In this case, the AI-assisted approach objectively took longer. A quick search would have turned up Rocket in under a minute. Instead, he spent a morning iterating, plus however many Claude API tokens went up in smoke along the way. Ironically, even ChatGPT would have pointed him straight to the existing app and saved the effort entirely (I checked).
 
-![A screenshot of a ChatGPT prompt and response](/assets/images/3BDiPKWtKWc2gmrnZ27ACvFfyfN6TDHepST4vCNY.webp)
+![ChatGPT recommending the existing Rocket app for Slack-style emoji shortcuts on macOS](/assets/images/3BDiPKWtKWc2gmrnZ27ACvFfyfN6TDHepST4vCNY.webp)
 
 So what's really going on here?
 

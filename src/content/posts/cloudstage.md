@@ -16,6 +16,6 @@ I personally use Amazon Web Services and Digital Ocean to quickly try out ideas 
 
 So I came up with [CloudStage](https://github.com/theprivateer/cloudstage) - a quick side-project that came about from playing with the AWS Route 53 (DNS) API.  It's a SUPER simple (and free) service that will give you a custom staging/development subdomain for you to point at your server of choice.  Feed it either an IP address or domain name, and it will resolve your custom domain in no time at all.  Tinkerers and hobbyists rejoice!
 
-![](/assets/images/kZlfxithk8lLGYf045O1kJpp24uEa9xtrUH8PQBA.webp)
+![CloudStage form for creating a staging subdomain and DNS record](/assets/images/kZlfxithk8lLGYf045O1kJpp24uEa9xtrUH8PQBA.webp)
 
 I still need to sort out some simple terms and conditions and a few monitoring features, but it's now live for all to try.  I don't expect it to get bombarded with users, so at the moment there is no limit to the number of sites you can set up - only that each domain name will self-destruct after 30 days (but there is nothing stopping you from setting it up again for another 30 days when it does). I've got some ideas of how to develop a slightly more 'pro' option, but my main reason for setting this up is for myself to use when exploring new ideas.

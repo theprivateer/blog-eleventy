@@ -12,7 +12,7 @@ metadata:
 
 This morning whilst doing my daily five minute browse of LinkedIn I came across a post highlighting a note from [DJ Patil](https://en.wikipedia.org/wiki/DJ_Patil), the first US Chief Data Scientist, summarising his approach to tackling problems.
 
-![](/assets/images/rQkIdKt8JmLnIirgCMrhIrbgECzq9oQfQcY3IKcy.webp)
+![DJ Patil's handwritten execution framework: dream in years, plan in months, evaluate in weeks and ship daily](/assets/images/rQkIdKt8JmLnIirgCMrhIrbgECzq9oQfQcY3IKcy.webp)
 
 ## Framework for Execution
 

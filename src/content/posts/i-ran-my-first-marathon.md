@@ -51,4 +51,4 @@ I'd been warned that the 33–40km stretch is the hardest part, where you leave 
 
 No regrets, and now that I know what to expect, I'm keen to line up again next year (albeit this time with a more consistent build-up behind me). For now, though, it's time to rest and recover before returning to my first love: cycling. I'm looking forward to getting back out on the roads and trails on two wheels, while keeping a regular running routine ticking over.
 
-![](/assets/images/bvatj4x9E4G8LZ367eEjA3SzUO636SD9ktNRKnZU.webp)
+![Marathon runners beneath the caption “How can you tell if someone ran a marathon? Don't worry, they'll tell you”](/assets/images/bvatj4x9E4G8LZ367eEjA3SzUO636SD9ktNRKnZU.webp)

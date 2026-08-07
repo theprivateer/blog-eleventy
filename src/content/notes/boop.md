@@ -5,7 +5,7 @@ created_at: 2025-04-14T15:53:36+00:00
 updated_at: 2025-04-14T15:53:36+00:00
 ---
 
-![](/assets/images/fjLNApJrWFG759KsnSTyp7w6VrLd5uGoJUrIp0o5.webp)
+![Boop's command palette showing the Base64 Decode and Base64 Encode actions](/assets/images/fjLNApJrWFG759KsnSTyp7w6VrLd5uGoJUrIp0o5.webp)
 
 At work I will often need to decode a JSON or Base64-encoded string to more-easily examine the data. Using online tools like [jsonformatter.org](https://jsonformatter.org) and [base64decode.org](https://www.base64decode.org) are certainly convenient, but not exactly great for security.
 

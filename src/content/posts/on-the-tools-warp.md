@@ -12,7 +12,7 @@ metadata:
 
 For years I have been a happy iTerm user (and before that, the native Mac Terminal.app). I only really signed up to request access to [Warp](https://www.warp.dev) to see what all the hype was about.
 
-![](/assets/images/Q0xjc4ll5kRrdCpwceARKiQRybnOcKOV5Ou3IoQ6.webp)
+![Warp terminal showing Git command suggestions and descriptions](/assets/images/Q0xjc4ll5kRrdCpwceARKiQRybnOcKOV5Ou3IoQ6.webp)
 
 It took just ten minutes with the Rust-based terminal to make me instantly switch. I used up my 20 complementary invites to get my fellow developers at [Rexlabs](https://www.rexlabs.io) to take a look, and roughly 90% of them have switched as well.
 

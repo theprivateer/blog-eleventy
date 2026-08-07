@@ -12,7 +12,7 @@ metadata:
 
 In 2021 I set out to return to reading more.  Looking at my stats in Apple Books I managed to get through a decent library of books - both fiction and non-fiction - but there were three standout titles.
 
-![](/assets/images/DiYgAvPfiOWfEVWpgMv0X5FEJgbSa2d9GmkKXzP8.webp)
+![Book covers for Digital Minimalism, Essentialism and Effortless](/assets/images/DiYgAvPfiOWfEVWpgMv0X5FEJgbSa2d9GmkKXzP8.webp)
 
 Each of these have had the most meaningful impact on me in 2021, arming me with systems to cut through the noise and root out what is truly important every day. I would highly recommend them all, but if I had to choose just one it would have to be [Essentialism](https://gregmckeown.com/books/essentialism/) by [Greg McKeown](https://gregmckeown.com) (partly because off the back of it you would be compelled to read the follow-up book [Effortless](https://gregmckeown.com/books/effortless/)!).
 

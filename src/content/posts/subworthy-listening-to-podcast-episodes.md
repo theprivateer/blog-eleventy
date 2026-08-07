@@ -16,6 +16,6 @@ RSS is the defacto standard for distributing information about podcast episodes,
 
 As of today, you can now listen to your latest podcasts without leaving your Subworthy daily issue via a simple audio player in the expanded view of an article.
 
-![](/assets/images/65tdMlVXNDVWdc1hsME18sE02M5d8CfQ4EV4hGKV.webp)
+![A Subworthy article with an embedded audio player for the Fathom podcast](/assets/images/65tdMlVXNDVWdc1hsME18sE02M5d8CfQ4EV4hGKV.webp)
 
 (If you haven't already, check out the [Above Board](https://feeds.transistor.fm/above-board-from-fathom-analytics) podcast from the guys behind [Fathom Analytics](https://usefathom.com/ref/EVGUCG))

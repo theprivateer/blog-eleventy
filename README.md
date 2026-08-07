@@ -118,6 +118,8 @@ Add or edit Markdown in the relevant `src/content` directory. Posts, notes, page
 
 Post ordering comes from `published_at` frontmatter, while note ordering comes from `created_at`. Filenames do not participate in chronological ordering.
 
+Bare `http://` and `https://` URLs in Markdown content are automatically rendered as clickable links. Use normal Markdown link syntax when the displayed text should differ from the URL.
+
 Useful frontmatter fields include:
 
 - Posts: `title`, `published_at`, `category_id`, `created_at`, `updated_at`, and `metadata`.
@@ -133,7 +135,7 @@ Content images live in `src/assets/images` and use site-root-relative Markdown p
 ![Alternative text](/assets/images/example.webp)
 ```
 
-Content images are stored as WebP files. Eleventy copies them unchanged to `_site/assets/images` during each build, so content does not depend on the former `assets.philstephens.com` bucket or require image processing during deployment.
+Give every content image concise alternative text that communicates its purpose in the surrounding article. Content images are stored as WebP files. Eleventy copies them unchanged to `_site/assets/images` during each build, so content does not depend on the former `assets.philstephens.com` bucket or require image processing during deployment.
 
 ## Testing
 

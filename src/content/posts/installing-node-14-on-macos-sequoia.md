@@ -29,7 +29,7 @@ softwareupdate --install-rosetta
 
 Now that Rosetta is installed we need to reopen the terminal in a Rosetta shell. If using the default macOS terminal, find it in the `/Applications/Utilities` directory in Finder, right-click the application and click ‘Get Info’. Find and check ‘Open using Rosetta’, and then restart the app.
 
-![](/assets/images/tsuzmNEWU0HLbyNAbwlm23s3a7ESZdiHVDzl4G3O.webp)
+![macOS Get Info window for Terminal with Open using Rosetta selected](/assets/images/tsuzmNEWU0HLbyNAbwlm23s3a7ESZdiHVDzl4G3O.webp)
 
 Next switch out of the `arm64` architecture by running the following command in the reopened terminal window:
 

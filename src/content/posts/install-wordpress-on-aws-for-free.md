@@ -22,29 +22,29 @@ Log into your AWS account and go to the [EC2 dashboard](https://ap-southeast-2.c
 
 Click _Launch Instance_.
 
-![](/assets/images/4vwXRXFTft0GUbu9QFCvQcNew6WQ1KeFFA4EwJ3o.webp)
+![AWS EC2 dashboard with the Launch Instance button highlighted](/assets/images/4vwXRXFTft0GUbu9QFCvQcNew6WQ1KeFFA4EwJ3o.webp)
 
 Select the **Amazon Linux AMI 2017.03.1 (HVM), SSD Volume Type** (version correct at time of writing).
 
-![](/assets/images/XvWTujoVLQCIA8SweoKNIBqEJhLU66FJ5iLpGoqs.webp)
+![AWS EC2 wizard with the Amazon Linux AMI selected](/assets/images/XvWTujoVLQCIA8SweoKNIBqEJhLU66FJ5iLpGoqs.webp)
 
 For the purposes of this tutorial, the default selection (**t2.micro**) is fine (and eligible for the free usage tier!)
 
-![](/assets/images/1J6nBQduxP1RyzkV7iDRN10RB2zexZFgvQB08iiu.webp)
+![AWS EC2 wizard with the free-tier t2.micro instance type selected](/assets/images/1J6nBQduxP1RyzkV7iDRN10RB2zexZFgvQB08iiu.webp)
 
 Skip both the Step 3 (Configure Instance Details) and Step 4 (Add Storage) - they have sensible defaults.
 
 In Step 5 (Add Tags) give your instance a name by clicking _click to add a Name tag_. Can't think of a name? Check out some fun suggestions at [https://haikunator.cloudstage.me/](https://haikunator.cloudstage.me/).
 
-![](/assets/images/9YGHGYq9uIx8IXpsq9hjizelhvnxIIqOuNUgpPLR.webp)
+![AWS EC2 wizard adding a Name tag to the instance](/assets/images/9YGHGYq9uIx8IXpsq9hjizelhvnxIIqOuNUgpPLR.webp)
 
 Next up, configure the security group.  For this tutorial we'll set up some very basic rules.  First off, lock down SSH access to your current IP address.  Then add a rule for HTTP on port 80 - set this to _Anywhere_.
 
-![](/assets/images/8sdLK64dvgzoBsCsVCNk04m4bhHooSsPbkmvVd6B.webp)
+![AWS EC2 security group allowing SSH from the current IP and HTTP from anywhere](/assets/images/8sdLK64dvgzoBsCsVCNk04m4bhHooSsPbkmvVd6B.webp)
 
 Click _Review and Launch_.  This is the final step before we launch the new server instance - setting up an access key for SSH access to the server.  When prompted, select _Create a new key pair_ and give it a memorable name.  Download the key file (in .pem format) and keep it safe - this will be your only means to access the new server.
 
-![](/assets/images/qL6mJErViWx84lkOtFlgaaKsz4gclwwBlddsxl1A.webp)
+![AWS EC2 dialog for creating and downloading a new SSH key pair](/assets/images/qL6mJErViWx84lkOtFlgaaKsz4gclwwBlddsxl1A.webp)
 
 Finally, click _Launch Instance_ to spin up your new server.
 

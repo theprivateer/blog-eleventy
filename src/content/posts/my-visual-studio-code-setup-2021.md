@@ -16,7 +16,7 @@ With a sprinkling of extensions and configurations I have more or less been able
 
 ## Appearance
 
-![](/assets/images/1fQHVIh1r0hXNqzHNkQ6tL9ui65J5MXnHkpX4EoD.webp)
+![Visual Studio Code displaying a Laravel PHP file in a light theme](/assets/images/1fQHVIh1r0hXNqzHNkQ6tL9ui65J5MXnHkpX4EoD.webp)
 
 For years I have been a fan of the default dark IDE themes - but about a year ago I [watched this video](https://www.youtube.com/watch?v=rDMI1dpNfdw&t=353s) about the benefits of using a light based theme I decided to give [phpstorm-light-lite-theme](https://github.com/brendt/phpstorm-light-lite-theme) a whirl.
 

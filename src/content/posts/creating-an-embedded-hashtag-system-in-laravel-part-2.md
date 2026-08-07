@@ -33,7 +33,7 @@ Head on over to [www.algolia.com](https://www.algolia.com/) and sign up for a fr
 
 You can skip the tutorial and head straight to your dashboard to gather the information that we will need for the next step.  In the sidebar, click on the _API Keys_ link.
 
-![](/assets/images/004n8mBpNk2siVxN6zfpWD86TXfqtqlNKtMrcWdo.webp)
+![Algolia dashboard showing the Application ID, Search-Only API Key and Admin API Key](/assets/images/004n8mBpNk2siVxN6zfpWD86TXfqtqlNKtMrcWdo.webp)
 
 We will need the _Application ID_, _Search-Only API Key_ and the _Admin API Key_ in the next step.
 
@@ -132,7 +132,7 @@ php artisan tinker
 
 By default, the `AlgoliaEloquentTrait` will create an index with the same name as our local database table - in this case `tags` and will push up an entire JSON representation of each model.  If you quickly publish some posts with a few hashtags and then head back to the _Indices_ view on the Algolia dashboard, you will see that a new index has been created (`tags`) and it has been populated.
 
-![](/assets/images/qH69EWI7Dho1eRXInbMhuW15Njo9f4jYO8tI0jJ1.webp)
+![Algolia dashboard showing records in the tags index](/assets/images/qH69EWI7Dho1eRXInbMhuW15Njo9f4jYO8tI0jJ1.webp)
 
 Our index is a really simple one that we are performing basic text-based searches on so there is no need to set up custom ranking or indexing criteria at this stage.
 
@@ -259,6 +259,6 @@ $(function() {
 
 And that's it - the #hashtag feature is now ready to use!
 
-![](/assets/images/KMxYCgF8h4xmERZ6Ovrs4agod00GyElsVXxtNy3z.webp)
+![Animated demonstration of Algolia-powered hashtag suggestions beneath the post editor](/assets/images/KMxYCgF8h4xmERZ6Ovrs4agod00GyElsVXxtNy3z.webp)
 
 As you can see, the values that we are displaying are using the English version in the tag's JSON structure, but you can change this depending on what translation options you are using in Spatie's tag package.
