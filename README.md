@@ -1,6 +1,6 @@
-# Phil Stephens — Eleventy
+# Phil Stephens - Eleventy Static Site
 
-Static Eleventy version of [philstephens.com](https://philstephens.com), migrated from the custom Laravel CMS in `~/Herd/philstephens`.
+My [personal website](https://philstephens.com) built with Eleventy. Successor of a [Laravel-powered custom CMS](https://github.com/theprivateer/blog).
 
 The Markdown files in `src/content` are the source of truth. Eleventy turns them into a static site while preserving the Laravel site's public URLs, Kelp UI presentation, feeds, sitemap, pagination, category archives, and legacy post redirects.
 
