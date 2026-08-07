@@ -62,9 +62,11 @@
         </style>
 	</head>
 	<body>
+        <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+
         <header class="container">
             <nav class="navbar">
-                <a class="logo" href="/">
+                <a class="logo" href="/" aria-label="Phil Stephens homepage">
                     {% include "logo.njk" %}
                 </a>
                 <ul>
@@ -75,7 +77,7 @@
                 </ul>
             </nav>
         </header>
-		<main class="container">
+		<main id="main-content" class="container" tabindex="-1">
             {{ content | safe }}
         </main>
 

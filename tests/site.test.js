@@ -216,6 +216,29 @@ test("rendered pages use a valid heading hierarchy", async () => {
   }
 });
 
+test("shared site pages provide a working skip link", async () => {
+  const page = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+  const skipLink = '<a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>';
+  const mainTarget = '<main id="main-content" class="container" tabindex="-1">';
+
+  assert.match(page, new RegExp(`<body>\\s*${skipLink}`));
+  assert.ok(page.indexOf(skipLink) < page.indexOf(mainTarget));
+  assert.match(page, new RegExp(mainTarget));
+});
+
+test("the SVG homepage link has an accessible name", async () => {
+  const page = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+
+  assert.match(page, /<a class="logo" href="\/" aria-label="Phil Stephens homepage">/);
+  assert.match(page, /<svg\b[^>]*aria-hidden="true"[^>]*focusable="false"/);
+});
+
+test("Cloudflare applies clickjacking protection to static responses", async () => {
+  const headers = await readFile(path.join(outputDirectory, "_headers"), "utf8");
+
+  assert.match(headers, /^\/\*\n  Content-Security-Policy: frame-ancestors 'none';\n  X-Frame-Options: DENY$/m);
+});
+
 test("internal links resolve to generated files", async () => {
   const files = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
   const missing = [];
