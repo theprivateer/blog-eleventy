@@ -36,6 +36,7 @@ test("build creates every migrated content route", async () => {
 test("key routes and all feed formats exist", async () => {
   const expected = [
     "index.html",
+    "404.html",
     "about/index.html",
     "blog/index.html",
     "notes/index.html",
@@ -56,6 +57,16 @@ test("key routes and all feed formats exist", async () => {
 
   JSON.parse(await readFile(path.join(outputDirectory, "feed/posts/json"), "utf8"));
   JSON.parse(await readFile(path.join(outputDirectory, "feed/notes/json"), "utf8"));
+});
+
+test("custom 404 page is built and excluded from the sitemap", async () => {
+  const notFoundPage = await readFile(path.join(outputDirectory, "404.html"), "utf8");
+  const sitemap = await readFile(path.join(outputDirectory, "sitemap.xml"), "utf8");
+
+  assert.match(notFoundPage, /<title>Phil Stephens \| Page not found<\/title>/);
+  assert.match(notFoundPage, /<h1>Page not found<\/h1>/);
+  assert.match(notFoundPage, /<a href="\/">Return to the homepage<\/a>/);
+  assert.doesNotMatch(sitemap, /<loc>https:\/\/philstephens\.com\/404\.html<\/loc>/);
 });
 
 test("draft pages are retained as source but not published", async () => {
