@@ -83,7 +83,7 @@ Pages with `draft: true` remain in `src/content/pages` but are excluded from col
 
 ### Requirements
 
-- Node.js 18 or newer
+- Node.js 22 or newer (22.22.3 is pinned in `.nvmrc`)
 - npm
 
 Install dependencies:
