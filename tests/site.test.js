@@ -192,6 +192,30 @@ test("rendered HTML contains no unresolved site template variables", async () =>
   }
 });
 
+test("rendered pages use a valid heading hierarchy", async () => {
+  const files = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
+
+  for (const file of files) {
+    const relativePath = path.relative(outputDirectory, file);
+    const html = (await readFile(file, "utf8")).replace(/<pre\b[\s\S]*?<\/pre>/gi, "");
+    const headings = [...html.matchAll(/<h([1-6])\b/gi)].map((match) => Number(match[1]));
+
+    if (headings.length === 0) {
+      continue;
+    }
+
+    assert.equal(headings[0], 1, `first heading: ${relativePath}`);
+    assert.equal(headings.filter((level) => level === 1).length, 1, `single h1: ${relativePath}`);
+
+    for (let index = 1; index < headings.length; index += 1) {
+      assert.ok(
+        headings[index] <= headings[index - 1] + 1,
+        `heading level ${headings[index - 1]} to ${headings[index]}: ${relativePath}`,
+      );
+    }
+  }
+});
+
 test("internal links resolve to generated files", async () => {
   const files = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
   const missing = [];

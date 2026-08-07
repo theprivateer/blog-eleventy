@@ -28,7 +28,7 @@ As I write this the Greater Brisbane region where I live has been plunged into a
 
 Rather than default to the 'just get by' mindset I have instead been considering what I want to get out of 2021.  Here are a few of the things I've come up with:
 
-#### Mountain biking
+<h3 class="h4">Mountain biking</h3>
 
 I have been a fairly enthusiastic cyclist for almost a decade, but I don't get out on two wheels nearly as much as I would like to (despite owning three bikes).
 
@@ -42,7 +42,7 @@ So long as COVID-19 doesn't throw any curveballs this year, there is already a g
 
 I've got some ways to go in terms of both fitness and skill on the bike to get me to the start line of any of these events, so the first few months of 2021 will see me work on those (in a healthy and manageable way).
 
-#### Mental Fitness
+<h3 class="h4">Mental Fitness</h3>
 
 When it comes to endurance, the mental aspect is arguably as important (if not more) as physical fitness.
 
@@ -50,7 +50,7 @@ At the end of last year I picked up a Mental Fitness Diary from [Resilience Agen
 
 As a sufferer of anxiety I'm really looking forward to seeing how following the mental fitness strategies and rituals shapes up as the year progresses.
 
-#### Professional
+<h3 class="h4">Professional</h3>
 
 As I mentioned I've been pretty lucky with my work during the pandemic, and whilst it hasn't always been fun and games I am fortunate to be where I am.
 

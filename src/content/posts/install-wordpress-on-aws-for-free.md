@@ -14,7 +14,7 @@ Whilst I'm gradually building out my own blogging platform to meet my specific n
 
 Whilst there are plenty of AMIs available on the AWS Marketplace to do this for you, I prefer a slightly more hand-on approach - plus, it really isn't that complicated.  Using AWSs free-usage tier, you can quickly get up and running with a custom WordPress blog on your own hosting, for free (well, for the first year at least).
 
-### Launch a server
+<h2 class="h3 margin-start-0">Launch a server</h2>
 
 I'll assume that you've gone through the AWS registration (you will need a credit card - though it won't be charged) and verification process and are ready to go.
 
@@ -52,7 +52,7 @@ If you return to the instance overview you will be able to see your new EC2 inst
 
 In the first instance, to access the server (and your new WordPress installation) in a browser, you can either use the _Public DNS_ URL (something like _ec2-52-63-199-239.ap-southeast-2.compute.amazonaws.com_) or use a service such as [CloudStage](/blog/cloudstage/) to quickly create a more memorable staging domain - just enter your instance's IP address.
 
-### Connect to your server instance
+<h2 class="h3 margin-start-0">Connect to your server instance</h2>
 
 From now on we'll be using the command line to connect to and update your server.  Once your server is up and running open up Terminal (or similar) and navigate to where you have stored your `pem` file.  You'll need to update the file permissions before you can use it to ssh into your server:
 
@@ -66,7 +66,7 @@ Now you should be able to log into your box (substitute your server's IP address
 ssh -i wordpress.pem ec2-user@123.45.67.89
 ```
 
-### Install Apache, PHP and MySQL
+<h2 class="h3 margin-start-0">Install Apache, PHP and MySQL</h2>
 
 ```bash
 sudo yum update -y
@@ -125,7 +125,7 @@ find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 ```
 
-### Setting up MySQL
+<h2 class="h3 margin-start-0">Setting up MySQL</h2>
 
 ```bash
 sudo service mysqld start
@@ -162,7 +162,7 @@ Finally, as we did with Apache, lets set MySQL to start automatically on system 
 sudo chkconfig mysqld on
 ```
 
-### Install WordPress
+<h2 class="h3 margin-start-0">Install WordPress</h2>
 
 ```bash
 cd /var/www/html/
@@ -208,7 +208,7 @@ sudo service httpd restart
 
 Refresh the browser and run the setup again - you should now be all set.
 
-### Fix permalinks
+<h2 class="h3 margin-start-0">Fix permalinks</h2>
 
 In order for WordPress' pretty URL structure to work, you need to make some minor adjustments to your Apache setup:
 

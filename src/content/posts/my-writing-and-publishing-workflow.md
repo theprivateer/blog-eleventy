@@ -22,7 +22,7 @@ After a many iterations of the underlying code I think I’ve finally reached a 
 
 I have iPad Pro and want to use it as much as possible outside of my work, which meant finding a workflow that works with the unique limitations of the device / OS. Yes there are Git and Terminal apps for iPadOS (I already have [Working Copy](https://workingcopyapp.com/) and [Termius](https://termius.com/) installed), but I didn’t want publishing new content to involve launching two additional apps.
 
-# Micropub on iA Writer
+<h2 class="h1 margin-start-4xs">Micropub on iA Writer</h2>
 
 I do all of my writing in [iA Writer](https://ia.net/writer), and have done for years. I have it installed on all of my devices (2x MacBook Pros, iPhone and iPad) with my library synced over iCloud.
 
@@ -34,7 +34,7 @@ There *are* limitations to iA Writer’s implementation that I have had to get a
 
 One thing it _does_ handle well is the ability to upload any images in your content. Whilst I don’t intend for this blog to be particularly image-heavy, it is something I want to be able to use should I need it, without having to jump through extra hoops to upload images separately. It is for this reason that I decided to stick with iA Writer and embrace its limitations.
 
-# My Process
+<h2 class="h1 margin-start-4xs">My Process</h2>
 
 I have three main folders in my iA Writer library:
 
@@ -56,7 +56,7 @@ My site also has a number of pages (which I refer to as ‘slash pages’) for s
 
 I’ve found that this workflow has really worked for me as I can work on content at my own pace, in my preferred tools, and offline if necessary.
 
-# Changes I Would Like To Make
+<h2 class="h1 margin-start-4xs">Changes I Would Like To Make</h2>
 
 If I need to update a post (perhaps I spot a spelling mistake post-publishing) I need to do this within the code itself. This involves jumping into Working Copy, pulling the latest changes, editing the file, committing and pushing back to Github, and then finally SSH-ing onto my server to pull the changes (phew!). Not exactly the seamless editing experience I’ve been looking for.
 

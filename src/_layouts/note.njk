@@ -5,13 +5,13 @@ title: Notes
 <h1>Notes</h1>
 
 <article class="margin-end-4xl">
-    <h3 class="margin-end-0">
+    <h2 class="h3 margin-start-0 margin-end-0">
         {% if link %}
         <a href="{{ link }}">{{ title }}</a>
         {% else %}
         {{ title }}
         {% endif %}
-    </h3>
+    </h2>
     <p class="text-muted">
         {{ created_at | readableDate(true) }}
         {% if link %}

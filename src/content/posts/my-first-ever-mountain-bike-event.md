@@ -18,13 +18,13 @@ I'm using this event as an opportunity to test the water and see if I even enjoy
 
 With about a month and a half to get my training in there will be some specific areas I will be focussing on.
 
-### Endurance
+<h2 class="h3 margin-start-0">Endurance</h2>
 
 I don't think I have ever ridden my mountain bike continuously for four hours - sure, I've ridden my road bike 100+ kilometres with not a whole lot of training so I know I have _some_ innate ability to keep going, but mountain biking is a whole different ballgame. Not really a lot I can do to prepare for this other than spending time in the saddle.
 
 In this instance I won't be getting particularly scientific about my training - there are some longer events and personal challenges that I want to take part in later in the year that will require some more tactical training.  My main focus this time round will be finishing.  My performance doesn't have to be pretty (or even rank) but as long as a I make it through the four hours I'll be happy.
 
-### Technique
+<h2 class="h3 margin-start-0">Technique</h2>
 
 I often joke that whilst I love mountain biking I'm not especially good at it.  Whilst I am happy with my own abilities insofar as I get to ride the trails I want to, there is definitely a lot of room for improvement.  Technique isn't just about being able to jump those gaps or rail berms, it's also about riding efficiently to get the most out of  your energy output (whilst climbing, for example).
 

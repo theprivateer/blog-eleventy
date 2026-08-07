@@ -11,7 +11,7 @@ metadata:
 
 # Phil Stephens
 
-#### Engineering Leader · Technical Lead · Software Engineer
+<p class="margin-end-m"><strong>Engineering Leader · Technical Lead · Software Engineer</strong></p>
 
 Brisbane, Australia · hello@philstephens.com · [philstephens.com](https://philstephens.com)  
 
