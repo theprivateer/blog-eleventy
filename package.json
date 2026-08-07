@@ -1,0 +1,18 @@
+{
+  "name": "philstephens-static",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/clean-output.js && eleventy",
+    "dev": "node scripts/clean-output.js && eleventy --serve",
+    "debug": "node scripts/clean-output.js && DEBUG=Eleventy* eleventy",
+    "test": "npm run build -- --quiet && node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,21 @@
+---
+title: 'The Next Chapter'
+intro: 'This is a moment of reset, not because something went wrong, but because the path I was on no longer fit where I want to go next.'
+published_at: 2026-01-13T00:00:00+10:00
+category_id: null
+created_at: 2026-01-13T20:52:07+10:00
+updated_at: 2026-02-15T17:41:34+10:00
+metadata:
+    title: null
+    description: 'After seven months away from Rex Software, I’m returning refreshed and seeking a long-term engineering manager or technical lead role in 2026.'
+---
+
+It's been almost seven months since I stepped away from [Rex Software](https://rexsoftware.com). Over that time, I've taken the chance to reset, learn, and spend more time with my family. It's been invaluable, but now I'm ready to dive back in.
+
+Software building still fascinates me. There's nothing quite like getting hands-on, creating something that helps people, and seeing it come to life. That part of the job has always been incredibly rewarding.
+
+What I've missed most, though, is technical leadership. I love creating environments where developers feel confident to experiment, learn, and have fun while shipping solid, reliable systems. Guiding the architecture of platforms - big and small - mentoring developers, and connecting people has always been a central part of my professional passion.
+
+In 2026, I'm looking to advance my career in technical leadership. I'm seeking engineering manager roles, or technical/team lead positions with a clear path toward engineering management. I'm not rushing into the first opportunity - I want something long-term, not just a stepping-stone.
+
+I'm excited to see what the next chapter holds and to continue building software that makes a difference while helping teams thrive.

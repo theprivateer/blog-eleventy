@@ -1,0 +1,35 @@
+---
+title: 'Order a Filament table by a date column with NULL values first'
+intro: null
+published_at: 2024-06-23T00:00:00+10:00
+category_id: 2
+created_at: 2024-06-23T10:00:00+10:00
+updated_at: 2026-02-06T16:00:03+10:00
+metadata:
+    title: null
+    description: 'Learn how to sort Filament tables by published_at so draft rows with NULL values appear first while dated posts stay in reverse chronological order.'
+---
+
+The custom CMS I am using for this blog uses Laravel and [Filament](https://filamentphp.com) under the hood. The data model is rudimentary - I currently have separate models for the blog posts and entries for the 365 Albums project, each of which have a `published_at` column. This is used to control visibility on the site - it allows me to schedule posts in the future, as well as create ‘draft’ posts with no `published_at` value (i.e. `NULL`).
+
+On the Filament tables that power the UI in the backend, I want to list the posts (or albums) in reverse chronological order, with the newest (and future scheduled) posts first. I also want to show draft posts first.
+
+In MySQL, when using _ascending_ order the `NULL` values come first - so by flipping this (i.e. using `DESC` order) the `NULL` values come last.
+
+One way we can get around this my using a minus operator on the column name: 
+
+```sql
+ORDER BY -published_at ASC
+```
+
+This will reverse all of the date values (essentially ordering by `DESC`), without affecting the `NULL` values on the column. This will keep them _before_ the values with a date when sorting in ascending order.
+
+On the Filament resource we can add a default sort order to the return value of the `table` static method: 
+
+```php
+->defaultSort(fn ($query) => $query->orderByRaw('-published_at asc'));
+```
+
+This is just one way to achieve this sorting behaviour. I may change this up in the future (when I have more database entries) to see if there is an optimal approach.
+
+It’s worth noting that PostgreSQL treats `NULL` values as very large, so will automatically put the ‘draft’ posts before the dated posts when sorting in descending order.

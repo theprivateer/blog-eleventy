@@ -1,0 +1,11 @@
+{% for post in posts %}
+    {% set category = collections.categories | categoryById(post.data.category_id) %}
+    <article class="margin-end-xl">
+        <h3 class="margin-end-0"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+        <p class="text-muted"><em>Posted {{ post.data.published_at | readableDate(includeWeekday or false) }}
+        {% if category %}
+        in <a href="/category/{{ category.fileSlug }}">{{ category.data.title }}</a>
+        {% endif %}
+        </em></p>
+    </article>
+{% endfor %}

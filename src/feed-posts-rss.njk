@@ -1,0 +1,22 @@
+---
+permalink: /feed/posts/rss
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>Phil Stephens - all posts</title>
+    <link>{{ site.url }}</link>
+    <description>All of my posts</description>
+    <language>en-AU</language>
+    {% for post in collections.posts | limit(20) %}
+    <item>
+      <title>{{ post.data.title | xmlEscape | safe }}</title>
+      <link>{{ post.url | absoluteUrl }}</link>
+      <guid isPermaLink="true">{{ post.url | absoluteUrl }}</guid>
+      <pubDate>{{ post.data.published_at | rfc822Date }}</pubDate>
+      <description>{{ post.content | xmlEscape | safe }}</description>
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

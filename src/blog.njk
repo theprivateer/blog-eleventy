@@ -1,0 +1,21 @@
+---
+layout: base.njk
+title: Blog
+pagination:
+  data: collections.posts
+  size: 15
+  alias: posts
+  reverse: false
+permalink: "{% if pagination.pageNumber == 0 %}/blog/index.html{% else %}/blog/page/{{ pagination.pageNumber + 1 }}/index.html{% endif %}"
+---
+{% set listingPage = collections.pages | pageBySlug("blog") %}
+<h1>{{ listingPage.data.title or title }}</h1>
+
+{% if listingPage %}
+    {{ listingPage.content | safe }}
+{% endif %}
+
+<section>
+    {% include "post-list.njk" %}
+    {% include "pagination.njk" %}
+</section>

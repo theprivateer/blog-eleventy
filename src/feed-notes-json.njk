@@ -1,0 +1,23 @@
+---
+permalink: /feed/notes/json
+eleventyExcludeFromCollections: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Phil Stephens - all notes",
+  "home_page_url": "{{ site.url }}/notes/",
+  "feed_url": "{{ page.url | absoluteUrl }}",
+  "description": "All of my notes",
+  "authors": [{ "name": "{{ site.author.name }}", "url": "{{ site.url }}/" }],
+  "language": "en-AU",
+  "items": [
+    {% for note in collections.notes | limit(20) %}{
+      "id": {{ note.url | absoluteUrl | dump | safe }},
+      "url": {{ (note.data.link or note.url) | absoluteUrl | dump | safe }},
+      "title": {{ note.data.title | dump | safe }},
+      "content_html": {{ note.content | dump | safe }},
+      "date_published": {{ note.data.created_at | rfc3339Date | dump | safe }},
+      "date_modified": {{ note.data.updated_at | rfc3339Date | dump | safe }}
+    }{% if not loop.last %},{% endif %}{% endfor %}
+  ]
+}

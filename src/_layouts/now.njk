@@ -1,0 +1,12 @@
+---
+layout: page.njk
+---
+{{ content | safe }}
+
+<aside class="callout primary">
+    <p>Last updated: {{ updated_at | readableDate(true) }}</p>
+
+    <p>This page is inspired by <a href="https://nownownow.com/about">Derek Sivers' now page movement</a>.</p>
+
+    <p>I also have a <a href="/someday">someday page</a>.</p>
+</aside>

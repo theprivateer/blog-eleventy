@@ -1,0 +1,25 @@
+---
+title: 'More processing power isn’t necessarily better'
+intro: null
+published_at: 2025-02-03T00:00:00+10:00
+category_id: null
+created_at: 2025-02-03T17:38:21+10:00
+updated_at: 2026-04-01T12:58:32+10:00
+metadata:
+    title: null
+    description: 'Faster local Docker performance on an M4 Pro removes the friction that exposed inefficiencies, making mindful, efficient programming even more important.'
+---
+
+At work we use a unified development environment in Docker. This allows us to simulate all of the interconnected services and workloads of our production Kubernetes clusters, which is pretty awesome.
+
+Unfortunately, to-date the virtualisation on Apple’s M-series chips hasn’t been amazing, causing some performance bottlenecks. This is often most felt on cold-starts of the virtual environment, seeding and running tests, but can also be seen during certain requests to the backend and longer-running jobs. To be clear, the performance of our production environments is not a problem - the local Docker environment simply magnifies where there might be issues to the point we can experience a slower request first-hand.
+
+Personally I have always embraced this friction - it is a constant reminder to program for efficient processing and not to rely on raw power and auto-scaling to make up for inefficiency.
+
+A couple of weeks ago I was upgraded from my original M1 MacBook Pro (brand new out of the box) that I was given when I first started at the company, to a MacBook Pro with an M4 Pro chip.
+
+After the first cold start of our Docker environment I thought that perhaps it had failed somewhere along the way - it was so quick! The M4 Pro is a beast - arguably more powerful than I need - and it breezes through workloads that my previous M1 chugged through at a more leisurely pace.
+
+The performance bottlenecks that were more apparent on my M1 are now free-flowing. The previous friction that I had become accustomed to is gone. 
+
+Whilst I am extremely grateful for the upgrade, I now need to be more mindful of performance and avoiding ‘lazy’ programming.

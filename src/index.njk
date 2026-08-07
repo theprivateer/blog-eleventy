@@ -1,0 +1,16 @@
+---
+layout: base.njk
+title: Home
+permalink: /index.html
+---
+{% set homepage = collections.pages | pageBySlug("home") %}
+<section>
+    {{ homepage.content | safe }}
+</section>
+<div class="space-y-8 relative mt-16">
+    <h2 class="text-2xl font-bold">Recent Posts</h2>
+
+    {% set posts = collections.posts | limit(5) %}
+    {% set includeWeekday = true %}
+    {% include "post-list.njk" %}
+</div>

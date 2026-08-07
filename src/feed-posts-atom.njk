@@ -1,0 +1,23 @@
+---
+permalink: /feed/posts/atom
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-AU">
+  <title>Phil Stephens - all posts</title>
+  <subtitle>All of my posts</subtitle>
+  <link href="{{ site.url }}/"/>
+  <link href="{{ page.url | absoluteUrl }}" rel="self"/>
+  <updated>{{ collections.posts[0].data.updated_at | rfc3339Date }}</updated>
+  <id>{{ site.url }}/</id>
+  {% for post in collections.posts | limit(20) %}
+  <entry>
+    <title>{{ post.data.title | xmlEscape | safe }}</title>
+    <link href="{{ post.url | absoluteUrl }}"/>
+    <id>{{ post.url | absoluteUrl }}</id>
+    <published>{{ post.data.published_at | rfc3339Date }}</published>
+    <updated>{{ post.data.updated_at | rfc3339Date }}</updated>
+    <content type="html">{{ post.content | xmlEscape | safe }}</content>
+  </entry>
+  {% endfor %}
+</feed>

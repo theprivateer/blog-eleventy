@@ -1,0 +1,21 @@
+---
+title: 'Subworthy: Listening to podcast episodes'
+intro: null
+published_at: 2022-02-02T00:00:00+10:00
+category_id: 4
+created_at: 2022-02-02T10:00:00+10:00
+updated_at: 2026-02-07T10:04:38+10:00
+metadata:
+    title: null
+    description: 'Subworthy now lets you listen to the latest podcast episodes directly in your daily issue with a simple built-in audio player for RSS podcast feeds.'
+---
+
+_**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy/).**_
+
+RSS is the defacto standard for distributing information about podcast episodes, so naturally you can use [Subworthy](https://subworthy.com) to subscribe to podcast feeds.
+
+As of today, you can now listen to your latest podcasts without leaving your Subworthy daily issue via a simple audio player in the expanded view of an article.
+
+![](/assets/images/65tdMlVXNDVWdc1hsME18sE02M5d8CfQ4EV4hGKV.webp)
+
+(If you haven't already, check out the [Above Board](https://feeds.transistor.fm/above-board-from-fathom-analytics) podcast from the guys behind [Fathom Analytics](https://usefathom.com/ref/EVGUCG))

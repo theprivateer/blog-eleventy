@@ -1,0 +1,38 @@
+---
+layout: base.njk
+title: Notes
+pagination:
+  data: collections.notes
+  size: 15
+  alias: notes
+  reverse: false
+permalink: "{% if pagination.pageNumber == 0 %}/notes/index.html{% else %}/notes/page/{{ pagination.pageNumber + 1 }}/index.html{% endif %}"
+---
+{% set listingPage = collections.pages | pageBySlug("notes") %}
+<h1>{{ listingPage.data.title }}</h1>
+
+{{ listingPage.content | safe }}
+
+<section>
+    {% for note in notes %}
+        <article class="margin-end-4xl padding-m box">
+            <h3 class="margin-end-0">
+                {% if note.data.link %}
+                <a href="{{ note.data.link }}">{{ note.data.title }}</a>
+                {% else %}
+                {{ note.data.title }}
+                {% endif %}
+            </h3>
+            <p class="text-muted">
+                {{ note.data.created_at | readableDate(true) }}
+                {% if note.data.link %}
+                | {{ note.data.link | hostname }}
+                {% endif %}
+            </p>
+
+            {{ note.content | safe }}
+        </article>
+    {% endfor %}
+
+    {% include "pagination.njk" %}
+</section>

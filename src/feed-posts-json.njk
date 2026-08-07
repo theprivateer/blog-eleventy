@@ -1,0 +1,23 @@
+---
+permalink: /feed/posts/json
+eleventyExcludeFromCollections: true
+---
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Phil Stephens - all posts",
+  "home_page_url": "{{ site.url }}/",
+  "feed_url": "{{ page.url | absoluteUrl }}",
+  "description": "All of my posts",
+  "authors": [{ "name": "{{ site.author.name }}", "url": "{{ site.url }}/" }],
+  "language": "en-AU",
+  "items": [
+    {% for post in collections.posts | limit(20) %}{
+      "id": {{ post.url | absoluteUrl | dump | safe }},
+      "url": {{ post.url | absoluteUrl | dump | safe }},
+      "title": {{ post.data.title | dump | safe }},
+      "content_html": {{ post.content | dump | safe }},
+      "date_published": {{ post.data.published_at | rfc3339Date | dump | safe }},
+      "date_modified": {{ post.data.updated_at | rfc3339Date | dump | safe }}
+    }{% if not loop.last %},{% endif %}{% endfor %}
+  ]
+}

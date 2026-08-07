@@ -1,0 +1,23 @@
+---
+permalink: /feed/notes/atom
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-AU">
+  <title>Phil Stephens - all notes</title>
+  <subtitle>All of my notes</subtitle>
+  <link href="{{ site.url }}/notes/"/>
+  <link href="{{ page.url | absoluteUrl }}" rel="self"/>
+  <updated>{{ collections.notes[0].data.updated_at | rfc3339Date }}</updated>
+  <id>{{ site.url }}/notes/</id>
+  {% for note in collections.notes | limit(20) %}
+  <entry>
+    <title>{{ note.data.title | xmlEscape | safe }}</title>
+    <link href="{{ (note.data.link or note.url) | absoluteUrl }}"/>
+    <id>{{ note.url | absoluteUrl }}</id>
+    <published>{{ note.data.created_at | rfc3339Date }}</published>
+    <updated>{{ note.data.updated_at | rfc3339Date }}</updated>
+    <content type="html">{{ note.content | xmlEscape | safe }}</content>
+  </entry>
+  {% endfor %}
+</feed>

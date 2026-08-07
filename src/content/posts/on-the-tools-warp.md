@@ -1,0 +1,21 @@
+---
+title: 'On the Tools: Warp'
+intro: null
+published_at: 2022-03-13T00:00:00+10:00
+category_id: 3
+created_at: 2022-03-13T10:00:00+10:00
+updated_at: 2026-02-07T08:22:04+10:00
+metadata:
+    title: null
+    description: 'A firsthand look at Warp, the Rust-based terminal that replaced iTerm in minutes, with modern workflow improvements and standout developer-focused design.'
+---
+
+For years I have been a happy iTerm user (and before that, the native Mac Terminal.app). I only really signed up to request access to [Warp](https://www.warp.dev) to see what all the hype was about.
+
+![](/assets/images/Q0xjc4ll5kRrdCpwceARKiQRybnOcKOV5Ou3IoQ6.webp)
+
+It took just ten minutes with the Rust-based terminal to make me instantly switch. I used up my 20 complementary invites to get my fellow developers at [Rexlabs](https://www.rexlabs.io) to take a look, and roughly 90% of them have switched as well.
+
+I honestly didn't think my choice of terminal application would make a great deal of difference to my work (since I already leverage [Oh My ZSH](https://ohmyz.sh) to power-up my workflow) but I was wrong.  Warp feels like a terminal made for 2022. Whilst I haven't used any of the collaboration features yet it's only a matter of time (especially once the real-time collaboration feature ships).
+
+I also like how the devs at Warp do some [really deep dives](https://blog.warp.dev/how-warp-works/) into how the software works (and what makes it so different) - even if don't understand all of it!

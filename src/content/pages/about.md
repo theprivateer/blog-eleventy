@@ -1,0 +1,29 @@
+---
+title: About
+draft: false
+created_at: 2026-01-05T14:39:05+10:00
+updated_at: 2026-07-07T15:38:25+10:00
+metadata:
+    title: 'About Me'
+    description: 'UK-born software engineer and former architect in Brisbane, with 20+ years in engineering, leadership, mentoring, and building sustainable systems.'
+---
+
+I'm originally from the UK, but moved to Australia in 2013. I live in Brisbane with my wife, our two kids, and two cavoodles.
+
+## Work
+
+I originally trained as an architect, which shaped how I think about structure, systems, and design. In the early 2000s I moved into digital design and then into software development.
+
+I’ve spent over 20 years working in software, primarily in hands-on engineering and technical leadership roles. This has included mentoring engineers, guiding system architecture, working closely with product and other stakeholders, and supporting teams through change and growth.
+
+I tend to take a pragmatic, long-term approach to work, with a focus on clarity, sustainability, and building things that hold up over time.
+
+I am currently the **Technical Engineering Lead** for the *Website & Organic Growth* team at [Employment Hero](https://employmenthero.com).
+
+## Interests
+
+Outside of work, besides the [occasional software side-project](/category/projects) I spend my time refining my wood-fired pizza technique, cycling on the road and on trails, and running. I started running in the past year and a half and am currently training for my first marathon, the [Gold Coast Marathon](https://goldcoastmarathon.com.au). **Update:** [I did it!](/blog/i-ran-my-first-marathon)
+
+## Get in touch
+
+The best way to reach me is by email at [hello@philstephens.com](mailto:hello@philstephens.com). You can also use that same address to ping me via Apple Messages if you’re in the Apple ecosystem.

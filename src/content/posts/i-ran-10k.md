@@ -1,0 +1,21 @@
+---
+title: 'I ran 10k'
+intro: null
+published_at: 2025-04-11T00:00:00+10:00
+category_id: 5
+created_at: 2025-04-12T02:22:13+10:00
+updated_at: 2026-02-07T10:12:01+10:00
+metadata:
+    title: null
+    description: 'A personal milestone: completing a first nonstop 10km run, reflecting on a year of progress and looking ahead to marathon and half-marathon training.'
+---
+
+Last night I surprised myself by running 10km non-stop for the first time.
+
+I was running laps of the [North Lakes Parkrun](https://www.parkrun.com.au/northlakes/course/) course whilst my daughter was attending a session at the local YMCA, and only intended on matching my previous best of ~6.5km, which is four laps of the lake. However at the end of the fourth lap I just kept going... and going.
+
+I only started running for the first time about a year ago, and was pretty on-and-off towards the end of 2024, so I’m really happy with my progress.
+
+I’m registered to run the 10km event at the [Gold Coast Marathon](https://goldcoastmarathon.com.au) in July, and then the [Jetty2Jetty](https://www.visitmoretonbayregion.com.au/j2j) half-marathon a couple of weeks later.
+
+Whilst it is still 12 weeks out, it is good to know that I _can_ run the 10km distance without too much trouble and can now knuckle down and concentrate on training for the half-marathon distance.
