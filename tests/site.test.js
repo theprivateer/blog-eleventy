@@ -145,7 +145,7 @@ test("code pages load Prism with the Twilight theme on demand", async () => {
   assert.doesNotMatch(contentPage, /cdnjs\.cloudflare\.com\/ajax\/libs\/prism/);
 });
 
-test("content images have alt text and local images are copied into the built site", async () => {
+test("content images have alt text, load lazily, and are copied into the built site", async () => {
   const contentDirectory = path.resolve("src/content");
   const sourceImageDirectory = path.resolve("src/assets/images");
   const builtImageDirectory = path.join(outputDirectory, "assets/images");
@@ -179,6 +179,21 @@ test("content images have alt text and local images are copied into the built si
   const builtImages = (await filesBelow(builtImageDirectory)).map((file) => path.relative(builtImageDirectory, file));
 
   assert.deepEqual(builtImages.sort(), sourceImages.sort());
+
+  const htmlFiles = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
+  let renderedImageCount = 0;
+
+  for (const file of htmlFiles) {
+    const html = await readFile(file, "utf8");
+
+    for (const match of html.matchAll(/<img\b[^>]*>/gi)) {
+      renderedImageCount += 1;
+      assert.match(match[0], /\bloading="lazy"/, `lazy loading: ${path.relative(outputDirectory, file)}`);
+      assert.match(match[0], /\bdecoding="async"/, `async decoding: ${path.relative(outputDirectory, file)}`);
+    }
+  }
+
+  assert.ok(renderedImageCount > 0, "at least one rendered content image is tested");
 });
 
 test("rendered HTML contains no unresolved site template variables", async () => {
@@ -233,10 +248,10 @@ test("the SVG homepage link has an accessible name", async () => {
   assert.match(page, /<svg\b[^>]*aria-hidden="true"[^>]*focusable="false"/);
 });
 
-test("Cloudflare applies clickjacking protection to static responses", async () => {
+test("Cloudflare applies security headers to static responses", async () => {
   const headers = await readFile(path.join(outputDirectory, "_headers"), "utf8");
 
-  assert.match(headers, /^\/\*\n  Content-Security-Policy: frame-ancestors 'none';\n  X-Frame-Options: DENY$/m);
+  assert.match(headers, /^\/\*\n  Content-Security-Policy: frame-ancestors 'none';\n  Strict-Transport-Security: max-age=63072000; includeSubDomains\n  X-Frame-Options: DENY$/m);
 });
 
 test("internal links resolve to generated files", async () => {

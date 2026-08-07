@@ -19,7 +19,17 @@ function xmlEscape(value = "") {
 
 export default function (eleventyConfig) {
   eleventyConfig.configureErrorReporting({ allowMissingExtensions: true });
-  eleventyConfig.amendLibrary("md", (markdown) => markdown.set({ linkify: true }));
+  eleventyConfig.amendLibrary("md", (markdown) => {
+    markdown.set({ linkify: true });
+
+    const renderImage = markdown.renderer.rules.image;
+    markdown.renderer.rules.image = (tokens, index, options, environment, renderer) => {
+      tokens[index].attrSet("loading", "lazy");
+      tokens[index].attrSet("decoding", "async");
+
+      return renderImage(tokens, index, options, environment, renderer);
+    };
+  });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });
   eleventyConfig.addPassthroughCopy({ "src/_redirects": "_redirects" });

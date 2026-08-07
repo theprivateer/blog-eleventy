@@ -1,5 +1,6 @@
 /*
   Content-Security-Policy: frame-ancestors 'none';
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
   X-Frame-Options: DENY
 
 /feed/*/rss
