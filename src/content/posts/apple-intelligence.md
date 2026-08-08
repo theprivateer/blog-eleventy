@@ -7,7 +7,7 @@ created_at: 2024-12-13T15:44:00+10:00
 updated_at: 2024-12-13T15:44:00+10:00
 metadata:
     title: null
-    description: 'A measured take on Apple Intelligence in Australia, from limited interest in Siri and image tools to optimism about private, health-focused AI.'
+    description: 'Most Apple Intelligence features leave me cold, but private, health-focused uses of AI could still make the technology genuinely valuable.'
 ---
 
 Yesterday with iOS 18.2 Apple Intelligence was officially released in Australia. I acknowledge that it is Apple's current cornerstone feature, however I'm just not that excited by it.

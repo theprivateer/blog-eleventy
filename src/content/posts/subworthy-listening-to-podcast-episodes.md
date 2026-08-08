@@ -7,7 +7,7 @@ created_at: 2022-02-02T10:00:00+10:00
 updated_at: 2026-02-07T10:04:38+10:00
 metadata:
     title: null
-    description: 'Subworthy now lets you listen to the latest podcast episodes directly in your daily issue with a simple built-in audio player for RSS podcast feeds.'
+    description: 'I added podcast support to Subworthy, so new episodes can be played directly from the same daily email issue as articles and videos.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy/).**_

@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-05-24T16:33:40+10:00
 metadata:
     title: null
-    description: null
+    description: 'The hardware and software I currently use every day, from my Mac, iPad and running watches to the development tools in my working setup.'
 ---
 
 ## Hardware

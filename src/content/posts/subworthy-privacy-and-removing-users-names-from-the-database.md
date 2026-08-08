@@ -7,7 +7,7 @@ created_at: 2022-01-21T10:00:00+10:00
 updated_at: 2026-02-07T10:04:49+10:00
 metadata:
     title: null
-    description: 'Subworthy explains its minimal approach to tracking, why email open analytics were disabled, and the removal of users’ names from its database.'
+    description: 'I removed names and email-open tracking from Subworthy because the service works without them. Collecting less data is the simplest privacy policy.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy/).**_

@@ -7,7 +7,7 @@ created_at: 2022-08-29T10:00:00+10:00
 updated_at: 2022-08-29T10:00:00+10:00
 metadata:
     title: null
-    description: 'A reflection on rebuilding a personal site from scratch, replacing bloated framework CSS with a minimal, semantic approach shaped by intentional coding.'
+    description: 'Rebuilding my site without a CSS framework reminded me how much I value small, semantic code and understanding every decision in the stack.'
 ---
 
 I recently rebuilt this website.

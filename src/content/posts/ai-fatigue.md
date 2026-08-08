@@ -7,7 +7,7 @@ created_at: 2023-06-26T10:00:00+10:00
 updated_at: 2023-06-26T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal take on growing tired of AI hype, from endless product pitches to buzzword branding, and a longing for more original ideas.'
+    description: 'I’m tired of the relentless AI pitches, rebrands and buzzwords. I miss products built around original ideas rather than an obligatory AI feature.'
 ---
 
 It seems that every other tech story or product launch is about AI, and I'm getting kind of bored of it.

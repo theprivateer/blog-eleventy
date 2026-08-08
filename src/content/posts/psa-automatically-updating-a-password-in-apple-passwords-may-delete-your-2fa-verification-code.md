@@ -7,7 +7,7 @@ created_at: 2024-12-10T05:25:41+10:00
 updated_at: 2024-12-10T05:25:41+10:00
 metadata:
     title: null
-    description: 'Resetting a saved password in Apple Passwords can remove linked 2FA codes and notes. Back up recovery codes and avoid storing them with the login.'
+    description: 'Apple Passwords deleted my linked 2FA code and notes after a password reset. Keep recovery codes somewhere separate before updating a login.'
 ---
 
 I've recently started to port all of my passwords out of 1Password and into Apple's new standalone **Passwords** app. It's a work in progress, and I'm using the opportunity to ensure two-factor authentication, along with strong unique passwords, is enabled wherever possible.

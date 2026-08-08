@@ -7,7 +7,7 @@ created_at: 2025-01-12T20:07:20+10:00
 updated_at: 2025-01-12T20:07:20+10:00
 metadata:
     title: null
-    description: 'A look at a friction-free writing and publishing workflow using Markdown, GitHub, Micropub, and iA Writer across Mac, iPhone, and iPad.'
+    description: 'My writing workflow uses Markdown, GitHub, Micropub and iA Writer to make publishing from a Mac, iPhone or iPad as frictionless as possible.'
 ---
 
 *[David McCullough](https://www.goodreads.com/quotes/9338856-writing-is-thinking-to-write-well-is-to-think-clearly):*

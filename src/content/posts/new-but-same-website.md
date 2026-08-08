@@ -7,7 +7,7 @@ created_at: 2024-06-15T10:00:00+10:00
 updated_at: 2024-06-15T10:00:00+10:00
 metadata:
     title: null
-    description: 'A rebuilt personal site now runs on a custom Laravel and Filament CMS, with plans to add Tailwind CSS and document the process over time.'
+    description: 'I rebuilt this site around a custom Laravel and Filament CMS. It looks familiar for now, but the foundations and publishing workflow are entirely new.'
 ---
 
 A day or so ago I launched a new website. It looks exactly the same, but under the hood it uses a custom built CMS leveraging the latest version of Laravel and [Filament](https://filamentphp.com/) for the backend admin.

@@ -7,7 +7,7 @@ created_at: 2021-11-27T10:00:00+10:00
 updated_at: 2026-01-05T15:40:26+10:00
 metadata:
     title: null
-    description: 'A reflection on DJ Patil’s frameworks for execution, scale and effectiveness, and how they can guide product work, career planning and personal goals.'
+    description: 'DJ Patil’s frameworks for execution, scale and effectiveness give me a useful way to think about product work, career choices and personal goals.'
 ---
 
 This morning whilst doing my daily five minute browse of LinkedIn I came across a post highlighting a note from [DJ Patil](https://en.wikipedia.org/wiki/DJ_Patil), the first US Chief Data Scientist, summarising his approach to tackling problems.

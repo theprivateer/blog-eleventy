@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-02-15T17:54:28+10:00
 metadata:
     title: null
-    description: null
+    description: 'My favourite bags, clothes, footwear, coffee gear, technology and wellbeing products—recommended because I use them, with no affiliate links.'
 ---
 
 My favourite products, tools and gear. No affiliate links.

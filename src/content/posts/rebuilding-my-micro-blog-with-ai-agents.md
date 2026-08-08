@@ -7,7 +7,7 @@ created_at: 2026-03-13T13:31:47+10:00
 updated_at: 2026-03-13T13:36:04+10:00
 metadata:
     title: null
-    description: 'A practical look at rebuilding a micro-blog with AI agents, using Claude Code in Laravel and SwiftUI to test where agent-driven workflows help.'
+    description: 'I rebuilt my microblog with Claude Code across Laravel and SwiftUI to see where agent-led development helps—and where judgement still matters.'
 ---
 
 Over the past few months I've started using AI agents more regularly in my development workflow. At first it was mostly the usual things: asking questions, generating small snippets of code, or acting as a slightly more capable autocomplete. In many ways it simply replaced a lot of trips to search engines and documentation.

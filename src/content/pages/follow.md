@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-03-24T05:20:45+10:00
 metadata:
     title: null
-    description: null
+    description: 'Subscribe to my posts, notes or moments by RSS, Atom or JSON Feed, or find the handful of social accounts I still use occasionally.'
 ---
 
 ## Subscribe to the main feed

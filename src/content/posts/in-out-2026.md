@@ -7,7 +7,7 @@ created_at: 2026-01-02T10:00:00+10:00
 updated_at: 2026-01-19T16:43:35+10:00
 metadata:
     title: null
-    description: 'A personal 2026 list of habits and mindsets to embrace, from saunas and networking to running, cycling, self-care, and AI, while letting go of FOMO.'
+    description: 'My in-and-out list for 2026: more running, cycling, self-care and useful AI; less FOMO, hesitation and energy spent on things I cannot control.'
 ---
 
 2026 for me, will aim to be:

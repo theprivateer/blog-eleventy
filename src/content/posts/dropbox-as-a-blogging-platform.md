@@ -7,7 +7,7 @@ created_at: 2017-07-08T10:00:00+10:00
 updated_at: 2017-07-08T10:00:00+10:00
 metadata:
     title: null
-    description: 'A look at using Dropbox webhooks and Markdown files to power a custom Laravel blog, improving writing, syncing, image handling, and mobile editing.'
+    description: 'I connected Dropbox webhooks to my Laravel blog so I could publish Markdown from any device while keeping images and revisions in sync.'
 ---
 
 At the time of writing this blog is powered by a lightweight bespoke platform built on Laravel.  Whilst there are many great blogging platforms out there, I decided to build my own to meet my own specific requirements, and to scratch the itch of building something that I would use everyday.

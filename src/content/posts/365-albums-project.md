@@ -7,7 +7,7 @@ created_at: 2024-05-09T10:00:00+10:00
 updated_at: 2024-05-09T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal 365-day album listening project revisiting favorite records across genres, with occasional memories, stories, and track highlights.'
+    description: 'I’m listening to one album every day for a year, revisiting old favourites and sharing the memories, stories and standout tracks they bring back.'
 ---
 
 These days listen to a lot of ambient music whilst working - more often than not playlists instead of full albums.

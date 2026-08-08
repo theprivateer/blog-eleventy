@@ -7,7 +7,7 @@ created_at: 2022-05-17T10:00:00+10:00
 updated_at: 2022-05-17T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal reflection on building better habits by focusing on an evening routine to improve sleep, mornings, and a more consistent day.'
+    description: 'Instead of forcing a perfect morning routine, I’m starting with the evening habits that make better sleep and calmer mornings possible.'
 ---
 
 Over the last year or so I've taken a keen interest in maximising my time, both at work and in my personal life. I've read a growing number of books on the subjects of habits and routines - not to try and find some silver bullet to magically make my days more productive - but to collate common themes and ideas in order to formulate strategies that might work for me.

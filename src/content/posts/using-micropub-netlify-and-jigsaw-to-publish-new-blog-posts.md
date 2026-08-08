@@ -7,7 +7,7 @@ created_at: 2022-09-01T10:00:00+10:00
 updated_at: 2026-01-05T15:46:23+10:00
 metadata:
     title: null
-    description: 'Learn how to publish static site posts from iA Writer using Micropub, Netlify Functions, GitHub, and Jigsaw to trigger automatic rebuilds.'
+    description: 'Here’s how I connected iA Writer, Micropub, Netlify Functions and GitHub so publishing a Jigsaw post automatically rebuilds the site.'
 ---
 
 I've been wanting to find ways to reduce the friction involved in writing and publishing posts to this blog.

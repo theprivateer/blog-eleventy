@@ -7,7 +7,7 @@ created_at: 2024-03-09T10:00:00+10:00
 updated_at: 2024-03-09T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal look at moving away from being all-in on Apple, exploring cross-platform alternatives while keeping the flexibility to switch.'
+    description: 'I’m loosening Apple’s grip on my digital life by choosing cross-platform tools and making it easier to change devices when I want to.'
 ---
 
 At the start of the year I started to write a blog post about how I was growing increasingly uncomfortable with being ‘all-in’ with Apple products and services. It was intended to be an in-depth look at all the the products and services I use, and how and why I was starting to get dissatisfied with them (after years of almost evangelical use), but I ran out of steam.

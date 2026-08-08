@@ -7,7 +7,7 @@ created_at: 2020-11-12T10:00:00+10:00
 updated_at: 2020-11-12T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal reflection on reviving an old blog with Jigsaw and Netlify, moving Markdown content into a simple, low-cost static site setup.'
+    description: 'I’m writing again after reviving my old blog with Jigsaw, Markdown and Netlify—a simple static setup that costs almost nothing to run.'
 ---
 
 Earlier this year whilst idly searching for domain at work I discovered that **philstephens.com** was available.  I promptly snatched it up, and recently decided it was time to resurrect the blog that I used to host at an old domain.

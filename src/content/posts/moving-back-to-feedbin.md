@@ -7,7 +7,7 @@ created_at: 2024-12-29T00:30:19+10:00
 updated_at: 2024-12-29T00:30:19+10:00
 metadata:
     title: null
-    description: 'After trying Reeder and building a personal RSS tool, the author returns to Feedbin to manage feeds, YouTube subscriptions, and newsletters.'
+    description: 'I’m back with Feedbin after trying Reeder and building my own RSS tool, bringing feeds, YouTube subscriptions and newsletters into one place.'
 ---
 
 ## I ❤️ RSS

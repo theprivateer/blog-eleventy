@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-07-07T15:36:20+10:00
 metadata:
     title: null
-    description: 'An evolving list of future goals, from recording PHP screencasts to cycling long distances and building from comfortable 10K runs to a marathon.'
+    description: 'The things I would still like to create, learn and experience—from recording PHP screencasts to releasing an app and completing an Everesting ride.'
 ---
 
 This is a [someday](https://someday.page/) page. It outlines things I someday would like to achieve, accomplish, explore, experience, create, learn, and understand. It is ever-evolving.

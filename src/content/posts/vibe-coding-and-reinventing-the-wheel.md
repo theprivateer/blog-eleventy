@@ -7,7 +7,7 @@ created_at: 2026-01-30T14:23:57+10:00
 updated_at: 2026-02-05T07:50:51+10:00
 metadata:
     title: null
-    description: 'A reflection on AI-assisted building, why developers keep reinventing solved tools, and why judgment matters more as creation gets easier.'
+    description: 'AI makes rebuilding solved tools irresistibly easy. The scarce skill is no longer creating software, but judging what deserves to exist.'
 ---
 
 I came across a LinkedIn post today that stuck with me.

@@ -7,7 +7,7 @@ created_at: 2021-01-10T10:00:00+10:00
 updated_at: 2021-01-10T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal reflection on 2020 and a thoughtful plan for 2021, covering Australian citizenship, pandemic life, mountain biking, mental fitness and side projects.'
+    description: 'After the uncertainty of 2020, I’m heading into 2021 focused on citizenship, family, mountain biking, mental fitness and making things again.'
 ---
 
 It's that time of year when everyone takes stock of the year just past and looks ahead at what they want to achieve over the coming 12 months.

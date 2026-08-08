@@ -7,7 +7,7 @@ created_at: 2022-08-11T10:00:00+10:00
 updated_at: 2022-08-11T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal reflection on why thoughtless clothing donations can burden charities, and how to donate and recycle unwanted clothes more mindfully.'
+    description: 'Donating unwanted clothes can create more work than value. I’m learning to give charities only what they can genuinely use and recycle the rest.'
 ---
 
 I was recently browsing the [Patagonia](https://www.patagonia.com.au) website and started to read about the company's sustainability and attitude toward repairing and recycling clothing.

@@ -7,7 +7,7 @@ created_at: 2022-01-18T10:00:00+10:00
 updated_at: 2026-02-07T10:04:59+10:00
 metadata:
     title: null
-    description: 'Reflections after launching Subworthy on Product Hunt, including early feedback, a public changelog, free unlimited feeds, and onboarding improvements.'
+    description: 'What I learned from launching Subworthy on Product Hunt, the feedback that followed and the changes I’m making to pricing and onboarding.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy).**_

@@ -6,7 +6,7 @@ created_at: 2026-01-11T21:27:01+10:00
 updated_at: 2026-07-07T15:35:13+10:00
 metadata:
     title: null
-    description: null
+    description: 'My experience leading engineering teams, rescuing complex software projects and building scalable web platforms across more than 20 years.'
 ---
 
 # Phil Stephens

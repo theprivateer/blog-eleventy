@@ -7,7 +7,7 @@ created_at: 2026-03-27T11:42:29+10:00
 updated_at: 2026-04-01T12:55:20+10:00
 metadata:
     title: null
-    description: 'A reflection on how mismatched job titles can stall career progression, and why titles, CV wording, and ATS filters matter more than expected.'
+    description: 'A decade of mismatched job titles made my experience harder to recognise. I learned that titles, CV language and ATS filters matter more than they should.'
 ---
 
 I've spent the better part of a decade leading engineering teams, hiring developers, running sprint ceremonies, conducting performance reviews, and making the kind of decisions that shape products and people's careers. By any reasonable measure, I've been doing engineering management for years.

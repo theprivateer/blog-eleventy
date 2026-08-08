@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-02-12T09:53:16+10:00
 metadata:
     title: null
-    description: null
+    description: 'The best way to reach me is by email or Apple Messages. You can also find links to the few social platforms where I maintain a presence.'
 ---
 
 ## Email

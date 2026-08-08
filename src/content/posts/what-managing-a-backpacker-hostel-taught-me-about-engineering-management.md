@@ -7,7 +7,7 @@ created_at: 2026-02-09T16:57:14+10:00
 updated_at: 2026-02-09T17:16:00+10:00
 metadata:
     title: null
-    description: 'Lessons from managing a remote Scottish hostel reveal core engineering management skills: ownership, flow, trust, incident response, and reducing friction.'
+    description: 'Managing a remote Scottish hostel taught me the same lessons I now use in engineering leadership: ownership, flow, trust and calm incident response.'
 ---
 
 About fifteen years ago I spent six months managing [a backpacker hostel in the Highlands of Scotland](https://www.scotlandstophostels.com/our-hostels/inverness-student-hotel). The hostel was part of a wider chain with the head-office based in Edinburgh, more than 250 kilometres away. That distance mattered. Support was not immediate. Decisions stuck. If something went wrong, there was no quick escalation. You owned the outcome.

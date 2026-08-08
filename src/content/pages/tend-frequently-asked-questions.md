@@ -5,7 +5,7 @@ created_at: 2026-08-01T12:24:30+10:00
 updated_at: 2026-08-01T12:24:30+10:00
 metadata:
     title: null
-    description: 'Answers common questions about Tend, including recurring tasks, reminders, groups, schedules, completion history, device-only storage, and backups.'
+    description: 'How to use Tend for recurring tasks, reminders, groups and completion history, plus answers about device-only storage, backups and privacy.'
 ---
 
 ## Getting started

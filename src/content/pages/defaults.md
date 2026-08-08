@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-03-23T22:08:25+10:00
 metadata:
     title: null
-    description: null
+    description: 'The apps and services I currently use by default for email, notes, tasks, photos, reading, development and the rest of everyday digital life.'
 ---
 
  Type | App |

@@ -7,7 +7,7 @@ created_at: 2024-10-14T10:00:00+10:00
 updated_at: 2024-10-14T10:00:00+10:00
 metadata:
     title: null
-    description: 'A reflection on reshaping a personal website, moving between blog and digital garden formats before returning to a simple static site.'
+    description: 'After experimenting with a digital garden, I’m rebooting this site as a straightforward static blog and giving myself room to decide what comes next.'
 ---
 
 I’ve been going back and forth over what I want my online presence (i.e. this website) to be.

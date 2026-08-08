@@ -7,7 +7,7 @@ created_at: 2024-12-12T18:05:16+10:00
 updated_at: 2024-12-12T18:05:16+10:00
 metadata:
     title: null
-    description: 'A thoughtful roundup of 2024 reads on sustainable productivity, well-being and fiction, featuring Do Pause, Slow Productivity and Project Hail Mary.'
+    description: 'My favourite books of 2024 span sustainable productivity, wellbeing and fiction, including Do Pause, Slow Productivity and Project Hail Mary.'
 ---
 
 A common-thread you can find in the non-fiction books I read is productivity and well-being (both physically and mentally). Productivity is always going to be a hot-topic, especially in a world where every day seems to demand more, more, more. However I tend to gravitate towards books that aren't about productivity for productivity's sake - but more quality over quantity, and making room for 'life'.

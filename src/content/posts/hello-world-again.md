@@ -7,7 +7,7 @@ created_at: 2017-06-18T10:00:00+10:00
 updated_at: 2017-06-18T10:00:00+10:00
 metadata:
     title: null
-    description: 'A fresh start for a personal blog, with plans to write daily on web development, design, fitness, parenthood, and living with anxiety.'
+    description: 'I’m starting this blog again and aiming to write daily about development, design, fitness, parenthood and living with anxiety.'
 ---
 
 After sitting on a personal domain purchase for some time I figured it was high time to have another go at this blogging thing.  I want to get into a rhythm of posting _something_ every day, whether it be here or on social media (links up in the top-right corner), and I guess a lot of the time when I have something to say, it's either more than 140 characters (scratch Twitter), not visual (sorry Instagram) or maybe more personal (not this time LinkedIn).  Hence, this blog.

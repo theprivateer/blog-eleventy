@@ -7,7 +7,7 @@ created_at: 2022-08-12T10:00:00+10:00
 updated_at: 2026-01-05T15:44:54+10:00
 metadata:
     title: null
-    description: 'A personal look at simplifying an iPhone into a distraction-free tool by hiding apps, limiting notifications, and keeping only essential features.'
+    description: 'I stripped my iPhone back to the essentials by hiding distracting apps, limiting notifications and treating it as a useful tool again.'
 ---
 
 One of my stand-out reads of last year was Cal Newport's [Digital Minimalism](https://www.calnewport.com/books/digital-minimalism/) and I have been trying to adopt a healthier relationship with technology.

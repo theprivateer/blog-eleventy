@@ -5,6 +5,9 @@ published_at: 2026-07-06T13:46:24+10:00
 category_id: 5
 created_at: 2026-07-07T13:46:31+10:00
 updated_at: 2026-07-07T13:46:31+10:00
+metadata:
+    title: null
+    description: 'My first marathon took 5:17:23. Here’s how I paced the Gold Coast course, managed fuel and kept moving for 42.195km after an interrupted training plan.'
 ---
 
 This past weekend my family and I headed to the Gold Coast for the marathon weekend. It's a brilliant few days, with events for every ability. My wife and eldest daughter ran the 10km, and my youngest pushed through the 5km, with me tagging along for encouragement.

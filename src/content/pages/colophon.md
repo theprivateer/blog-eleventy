@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-08-08T20:50:04+10:00
 metadata:
     title: null
-    description: 'A static Eleventy site built from Markdown, styled with Kelp UI and deployed to Cloudflare Workers & Pages.'
+    description: 'How I build and host this site with Eleventy, Markdown, Kelp UI and Cloudflare—including its local assets, privacy and carbon footprint.'
 ---
 
 This site is built with [Eleventy](https://www.11ty.dev), a lightweight static site generator.

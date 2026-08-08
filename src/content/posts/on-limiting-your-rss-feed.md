@@ -7,7 +7,7 @@ created_at: 2024-01-02T10:00:00+10:00
 updated_at: 2024-01-02T10:00:00+10:00
 metadata:
     title: null
-    description: 'Why blogs should offer full-text RSS feeds with complete archives, making it easier for readers to explore past posts and follow longform content.'
+    description: 'I want full articles and complete archives in RSS feeds. Limiting either makes a blog harder to discover, follow and read on the reader’s terms.'
 ---
 
 If you have a blog with an RSS feed don't limit it to only the few most recent posts. And while you're at it, include the full post not just a teaser.

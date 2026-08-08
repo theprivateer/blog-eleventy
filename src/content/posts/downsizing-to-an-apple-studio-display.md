@@ -7,7 +7,7 @@ created_at: 2024-12-11T05:49:56+10:00
 updated_at: 2024-12-11T05:49:56+10:00
 metadata:
     title: null
-    description: 'A developer shares why switching from a bulky 34-inch widescreen to the 27-inch Apple Studio Display improved comfort, desk space, and clarity.'
+    description: 'Why moving from a 34-inch ultrawide to a 27-inch Apple Studio Display gave me more desk space, sharper text and a more comfortable setup.'
 ---
 
 For the past 5 years I've been using a 34" curved desktop monitor from Samsung, which I purchased to replace a dual ~24" display setup. Apart from its size, it was a pretty standard piece of office tech. It was big and bulky, taking up a disproportionate amount of desk space (I eventually had it mounted on a heavy-duty monitor arm). The resolution and refresh rate was pretty basic - but was certainly good enough, and with a decent amount of screen real-estate to play with.

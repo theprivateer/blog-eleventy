@@ -7,7 +7,7 @@ created_at: 2023-07-06T10:00:00+10:00
 updated_at: 2023-07-06T10:00:00+10:00
 metadata:
     title: null
-    description: 'After learning the Crocodile Trophy would end before plans could happen, this reflection urges acting on bucket list goals before they disappear.'
+    description: 'The Crocodile Trophy disappeared before I got the chance to ride it—a reminder that bucket-list plans need dates, not indefinite postponement.'
 ---
 
 One of my bucket list items is to compete in (and finish) the [Crocodile Trophy](https://www.croctrophy.com/) - a staged mountain bike race in tropical North Queensland.

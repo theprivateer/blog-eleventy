@@ -5,7 +5,7 @@ created_at: 2026-08-01T12:20:51+10:00
 updated_at: 2026-08-01T12:20:51+10:00
 metadata:
     title: null
-    description: 'Learn how Tend handles privacy: no accounts, no servers, no tracking, and all tasks, notes, and reminders stay stored on your iPhone.'
+    description: 'Tend has no accounts, servers, analytics or tracking. Your tasks, notes, history and reminders remain on your iPhone.'
 ---
 
 _Last updated: 1 August 2026_

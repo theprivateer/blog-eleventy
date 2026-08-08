@@ -7,7 +7,7 @@ created_at: 2026-03-12T14:06:41+10:00
 updated_at: 2026-04-07T09:27:10+10:00
 metadata:
     title: null
-    description: 'Shell function uses Claude to generate clear Git commit messages from staged diffs, with a spinner, interrupt cleanup, and truncated diff context.'
+    description: 'I wrote a shell function that sends staged Git changes to Claude and returns a commit message, with a spinner and sensible diff limits.'
 ---
 
 My Git commits will never have "WIP" message again. Loving this simple-but-effective use-case for Claude:
@@ -58,4 +58,4 @@ function commit() {
 ```
 Your mileage may vary depending on which model you use - I seem to get good enough results with Haiku 4.5, but feel free to change to `sonnet` or `opus` depending on your needs.
 
-All credit goes to [Freek Van der Herten](https://freek.dev/2978-how-to-automatically-generate-a-commit-message-using-claude) - check out his post for a full breakdown of how it works. 
+All credit goes to [Freek Van der Herten](https://freek.dev/2978-how-to-automatically-generate-a-commit-message-using-claude) - check out his post for a full breakdown of how it works.

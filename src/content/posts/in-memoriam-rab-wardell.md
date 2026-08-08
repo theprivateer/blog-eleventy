@@ -7,7 +7,7 @@ created_at: 2022-08-25T10:00:00+10:00
 updated_at: 2022-08-25T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal tribute to Scottish mountain biker Rab Wardell, reflecting on his inspiring spirit, sudden death at 37, and lasting impact on cycling.'
+    description: 'Remembering Scottish mountain biker Rab Wardell, whose talent, warmth and enthusiasm for riding inspired me long before his sudden death at 37.'
 ---
 
 Today I am saddened by the news of the passing of Scottish mountain biker [Rab Wardell](https://www.rabwardell.com), who [died in his sleep](https://www.theguardian.com/sport/2022/aug/24/mountain-bike-rider-rab-wardell-dies-aged-37) two days after winning the Scottish MTB XC Championships.

@@ -7,7 +7,7 @@ created_at: 2022-01-09T10:00:00+10:00
 updated_at: 2026-02-07T10:05:13+10:00
 metadata:
     title: null
-    description: 'An overview of Subworthy, a now-closed RSS reader built to reduce online distraction by bundling daily articles into a single scheduled email issue.'
+    description: 'I built Subworthy to turn RSS subscriptions into one scheduled daily email, making it easier to read deliberately instead of checking feeds all day.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy).**_

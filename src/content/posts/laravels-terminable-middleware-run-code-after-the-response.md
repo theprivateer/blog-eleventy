@@ -7,7 +7,7 @@ created_at: 2026-03-30T12:34:51+10:00
 updated_at: 2026-04-01T12:55:09+10:00
 metadata:
     title: null
-    description: 'Learn how Laravel terminable middleware runs code after sending the response, with examples, lifecycle details, singleton state, and best uses.'
+    description: 'Here’s how Laravel’s terminable middleware runs work after the response, including lifecycle details, shared state and when it is useful.'
 ---
 
 Most Laravel middleware runs before the response is sent to the browser. You check authentication, validate CSRF tokens, set headers. The request comes in, your middleware does its thing, and the response goes out. But some work doesn't need to happen before the response. It just needs to happen.

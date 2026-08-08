@@ -7,7 +7,7 @@ created_at: 2022-12-13T10:00:00+10:00
 updated_at: 2022-12-13T10:00:00+10:00
 metadata:
     title: null
-    description: 'A personal reflection on moving beyond a simple uses page to document the reasoning, tradeoffs, and minimalist choices behind an evolving setup.'
+    description: 'I want my uses page to explain why I choose each tool, including the trade-offs and the effort to keep my setup deliberately small.'
 ---
 
 I've been a long time fan of [Paul Stamatiou](https://paulstamatiou.com), and I particularly enjoy his in-depth [gear](https://paulstamatiou.com/stuff-i-use/) write-ups.

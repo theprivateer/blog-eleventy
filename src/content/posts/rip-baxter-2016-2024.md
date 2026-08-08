@@ -7,7 +7,7 @@ created_at: 2025-01-08T04:50:22+10:00
 updated_at: 2025-01-08T04:50:22+10:00
 metadata:
     title: null
-    description: 'A heartfelt tribute to Baxter, a beloved King Charles Cavalier Spaniel, whose sudden decline and passing were faced from afar during a South Pacific cruise.'
+    description: 'Remembering Baxter, our much-loved King Charles Cavalier Spaniel, and the painful goodbye we had to make from afar after his sudden decline.'
 ---
 
 ![Baxter, a King Charles Cavalier Spaniel, lying on a wooden deck](/assets/images/dT7pqRyOEzmaOwEAKFCO2UdDAgVVuiXdqCvbIGmX.webp)

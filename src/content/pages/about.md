@@ -5,7 +5,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-07-07T15:38:25+10:00
 metadata:
     title: 'About Me'
-    description: 'UK-born software engineer and former architect in Brisbane, with 20+ years in engineering, leadership, mentoring, and building sustainable systems.'
+    description: 'I’m a Brisbane-based engineering leader and former architect with more than 20 years in software, building systems and helping teams grow.'
 ---
 
 I'm originally from the UK, but moved to Australia in 2013. I live in Brisbane with my wife, our two kids, and two cavoodles.

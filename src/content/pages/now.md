@@ -6,7 +6,7 @@ created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-06-08T07:26:15+10:00
 metadata:
     title: null
-    description: null
+    description: 'What I’m focused on right now, across my work at Employment Hero, running and small software projects built with Claude Code and Codex.'
 ---
 
 ## Currently

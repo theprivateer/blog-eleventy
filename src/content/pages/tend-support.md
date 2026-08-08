@@ -5,7 +5,7 @@ created_at: 2026-08-01T12:21:16+10:00
 updated_at: 2026-08-01T12:25:38+10:00
 metadata:
     title: null
-    description: null
+    description: 'Get help with Tend for iPhone, including tasks, reminders, completion, archiving and on-device storage—or email me if you are still stuck.'
 ---
 
 Need a hand with Tend? Email **hello@philstephens.com** and I'll get back to you.

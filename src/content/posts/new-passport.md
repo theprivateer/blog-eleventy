@@ -7,7 +7,7 @@ created_at: 2024-01-12T10:00:00+10:00
 updated_at: 2026-01-05T14:57:04+10:00
 metadata:
     title: null
-    description: 'A renewed British passport replaces the old EU burgundy cover, marking a personal reminder of Brexit alongside life with Australian citizenship.'
+    description: 'My renewed British passport arrived in post-Brexit blue, a small but tangible reminder of what changed—even now that I’m also Australian.'
 ---
 
 ![A burgundy UK and Northern Ireland passport beside a new blue British passport](/assets/images/jTyxuaquWiQHZAyl4m5TUDfekJfgUFl547U5jmNL.webp)

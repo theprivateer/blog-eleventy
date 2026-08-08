@@ -7,7 +7,7 @@ created_at: 2024-04-23T10:00:00+10:00
 updated_at: 2024-04-23T10:00:00+10:00
 metadata:
     title: null
-    description: 'Comments are not enabled on this site, so responses happen by email instead. Use the Reply via email link at the bottom of any post to get in touch.'
+    description: 'I do not run a comments section, but every post has a reply-by-email link. Responses are welcome; they just happen privately.'
 ---
 
 This site does not have comments enabled - and likely never will. It's a lot of overhead to manage and maintain, and would require a fundamental change to how I host my site (goodbye fast static-site generators, hello databases). I simply don't want to use a hosted service such as Disqus where the content lives outside of the context of my site.

@@ -7,7 +7,7 @@ created_at: 2022-08-26T10:00:00+10:00
 updated_at: 2026-02-06T16:00:39+10:00
 metadata:
     title: null
-    description: 'Learn how to publish hidden underscore-prefixed files in Jigsaw by using an afterBuild listener to copy files like _redirects after the site build.'
+    description: 'Here’s how I use Jigsaw’s afterBuild event to publish underscore-prefixed files such as Netlify’s _redirects file.'
 ---
 
 I recently decided to update the URL structure for my blog posts but didn't want to break any of the internal links or search engine indexing that was in place. Luckily this is easy enough with Netlify by utilising static routing [redirects and rewrites](https://docs.netlify.com/routing/redirects/).
