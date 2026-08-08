@@ -17,7 +17,7 @@ The site contains four content types:
 
 Directory data files translate content fields such as `published_at`, `category_id`, and `draft` into Eleventy dates, collections, and permalinks. Pages can use Eleventy's native `layout` frontmatter when they need presentation beyond the standard page layout.
 
-Every public page has a self-referencing canonical URL and a JSON-LD graph describing the site, author and current page. Posts and notes add `BlogPosting`; profile and archive routes use `ProfilePage` and `CollectionPage`; and the visible breadcrumb trail is mirrored by `BreadcrumbList`. The sitemap is generated from the same public collections and archive pagination so these URL signals remain aligned.
+Every public page has a self-referencing canonical URL, Open Graph metadata and a JSON-LD graph describing the site, author and current page. Posts and notes add `BlogPosting`; profile and archive routes use `ProfilePage` and `CollectionPage`; and the visible breadcrumb trail is mirrored by `BreadcrumbList`. The sitemap is generated from the same public collections and archive pagination so these URL signals remain aligned. Open Graph descriptions reuse the page's meta description; deliberately compact notes omit both rather than padding their content or repeating a generic fallback.
 
 The frontend is a direct Nunjucks translation of the original Blade views. It uses locally served copies of Kelp UI 1.17.2, Inclusive Sans, and Prism 1.30.0 while retaining the original utility classes, sizes, spacing, colours, and inline SVGs. Pages containing fenced code blocks load Prism's Twilight theme and only the local language grammars required by that page; pages without code do not load Prism.
 
@@ -51,6 +51,8 @@ Posts and notes each provide RSS, Atom, and JSON feeds at the original extension
 - `/feed/notes/rss`
 - `/feed/notes/atom`
 - `/feed/notes/json`
+
+The feeds use each post or note page as the stable item permalink and identifier. External links attached to notes are represented as related links in RSS and Atom and as `external_url` in JSON Feed. RSS channels identify their own canonical URL, publish their last build date, and declare a sensible polling cadence.
 
 The build also generates `/sitemap.xml` and copies `robots.txt`, `_redirects`, and `_headers` into the output directory. `_headers` supplies the appropriate content types for extensionless feeds and applies the site's HSTS, CSP `frame-ancestors`, and `X-Frame-Options` security headers on Cloudflare Pages.
 
@@ -176,6 +178,8 @@ The tests build from a clean output directory and verify that:
 - content images have alt text, use WebP, load lazily, decode asynchronously, and resolve to local source files;
 - rendered documents have a valid heading hierarchy, working skip link, and an accessible SVG homepage link;
 - all 184 public pages have one self-canonical URL, valid page-specific JSON-LD, matching breadcrumbs, and a corresponding sitemap entry;
+- Open Graph metadata mirrors each page's canonical metadata while compact notes remain intentionally unsummarised;
+- RSS feeds self-identify, declare build dates and update cadence, and keep note permalinks distinct from related external URLs;
 - the built `_headers` file contains the expected Cloudflare security policy;
 - site-level Nunjucks variables are fully rendered; and
 - internal links resolve to generated files, apart from explicitly recorded historical links whose source targets no longer exist.

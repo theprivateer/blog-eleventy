@@ -8,6 +8,17 @@ function byDateDescending(a, b) {
   return new Date(b.data.published_at ?? b.data.created_at) - new Date(a.data.published_at ?? a.data.created_at);
 }
 
+function latestUpdatedDate(items) {
+  return items.reduce((latest, item) => {
+    const value = item.data.updated_at ?? item.data.published_at ?? item.data.created_at ?? item.date;
+    const date = value ? new Date(value) : undefined;
+
+    return date && !Number.isNaN(date.valueOf()) && (!latest || date > latest)
+      ? date
+      : latest;
+  }, undefined);
+}
+
 function breadcrumbItems(url, title, contentType, pageNumber) {
   if (!url || url === "/" || url === "/404.html") {
     return [];
@@ -83,6 +94,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("startsWith", (value, prefix) => String(value).startsWith(prefix));
   eleventyConfig.addFilter("absoluteUrl", (url) => new URL(url, SITE_URL).toString());
   eleventyConfig.addFilter("breadcrumbItems", breadcrumbItems);
+  eleventyConfig.addFilter("latestUpdatedDate", latestUpdatedDate);
   eleventyConfig.addFilter("xmlEscape", xmlEscape);
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value, null, 2));
   eleventyConfig.addFilter("readableDate", (value, includeWeekday = false) =>
@@ -118,6 +130,13 @@ export default function (eleventyConfig) {
     url: SITE_URL,
     language: "en-AU",
     description: "Personal website of Phil Stephens",
+    openGraph: {
+      image: `${SITE_URL}/assets/favicon.png`,
+      imageAlt: "Phil Stephens",
+      imageType: "image/png",
+      imageWidth: 320,
+      imageHeight: 320,
+    },
     author: {
       name: "Phil Stephens",
       email: "hello@philstephens.com",

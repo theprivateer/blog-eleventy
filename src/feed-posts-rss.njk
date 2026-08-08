@@ -3,12 +3,18 @@ permalink: /feed/posts/rss
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
   <channel>
     <title>Phil Stephens - all posts</title>
     <link>{{ site.url }}</link>
     <description>All of my posts</description>
     <language>en-AU</language>
+    <atom:link href="{{ page.url | absoluteUrl }}" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{{ collections.posts | limit(20) | latestUpdatedDate | rfc822Date }}</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
     {% for post in collections.posts | limit(20) %}
     <item>
       <title>{{ post.data.title | xmlEscape | safe }}</title>

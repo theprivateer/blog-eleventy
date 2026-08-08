@@ -13,7 +13,8 @@ eleventyExcludeFromCollections: true
   "items": [
     {% for note in collections.notes | limit(20) %}{
       "id": {{ note.url | absoluteUrl | dump | safe }},
-      "url": {{ (note.data.link or note.url) | absoluteUrl | dump | safe }},
+      "url": {{ note.url | absoluteUrl | dump | safe }},{% if note.data.link %}
+      "external_url": {{ note.data.link | absoluteUrl | dump | safe }},{% endif %}
       "title": {{ note.data.title | dump | safe }},
       "content_html": {{ note.content | dump | safe }},
       "date_published": {{ note.data.created_at | rfc3339Date | dump | safe }},

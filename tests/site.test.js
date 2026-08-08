@@ -200,6 +200,74 @@ test("metadata title overrides only the document title", async () => {
   assert.match(fallbackPage, /<title>Phil Stephens \| Contact<\/title>/);
 });
 
+test("Open Graph metadata mirrors canonical page metadata without padding compact notes", async () => {
+  const htmlFiles = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
+  let publicPageCount = 0;
+  let pagesWithoutDescriptions = 0;
+
+  for (const file of htmlFiles) {
+    const html = await readFile(file, "utf8");
+    const relativePath = path.relative(outputDirectory, file);
+
+    if (relativePath === "404.html" || /<meta http-equiv="refresh"/i.test(html)) {
+      continue;
+    }
+
+    publicPageCount += 1;
+    const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
+    const description = html.match(/<meta name="description" content="([^"]+)">/)?.[1];
+    const openGraphDescription = html.match(/<meta property="og:description" content="([^"]+)">/)?.[1];
+
+    assert.match(html, /<meta property="og:title" content="[^"]+">/, `og:title: ${relativePath}`);
+    assert.match(html, /<meta property="og:type" content="(?:website|article)">/, `og:type: ${relativePath}`);
+    assert.match(html, new RegExp(`<meta property="og:url" content="${canonical}">`), `og:url: ${relativePath}`);
+    assert.match(html, /<meta property="og:image" content="https:\/\/philstephens\.com\/assets\/favicon\.png">/, `og:image: ${relativePath}`);
+    assert.match(html, /<meta property="og:image:alt" content="Phil Stephens">/, `og:image:alt: ${relativePath}`);
+    assert.equal(openGraphDescription, description, `shared description: ${relativePath}`);
+
+    if (!description) {
+      pagesWithoutDescriptions += 1;
+      assert.match(relativePath, new RegExp(`^notes${path.sep}[^${path.sep}]+${path.sep}index\\.html$`));
+    }
+  }
+
+  assert.equal(publicPageCount, 184);
+  assert.equal(pagesWithoutDescriptions, 39);
+
+  const homepage = await readFile(path.join(outputDirectory, "index.html"), "utf8");
+  assert.match(homepage, /<meta property="og:title" content="Phil Stephens">/);
+  assert.match(homepage, /<meta name="description" content="Personal website of Phil Stephens">/);
+});
+
+test("feeds identify themselves and use stable note pages as canonical entries", async () => {
+  const postRss = await readFile(path.join(outputDirectory, "feed/posts/rss"), "utf8");
+  const noteRss = await readFile(path.join(outputDirectory, "feed/notes/rss"), "utf8");
+  const noteAtom = await readFile(path.join(outputDirectory, "feed/notes/atom"), "utf8");
+  const noteJson = JSON.parse(await readFile(path.join(outputDirectory, "feed/notes/json"), "utf8"));
+
+  for (const [name, rss, selfUrl, period] of [
+    ["posts", postRss, "https://philstephens.com/feed/posts/rss", "weekly"],
+    ["notes", noteRss, "https://philstephens.com/feed/notes/rss", "daily"],
+  ]) {
+    assert.match(rss, /xmlns:atom="http:\/\/www\.w3\.org\/2005\/Atom"/, `${name} Atom namespace`);
+    assert.match(rss, /xmlns:sy="http:\/\/purl\.org\/rss\/1\.0\/modules\/syndication\/"/, `${name} Syndication namespace`);
+    assert.match(rss, new RegExp(`<atom:link href="${selfUrl}" rel="self" type="application/rss\\+xml"\/>`), `${name} self link`);
+    assert.match(rss, /<lastBuildDate>[^<]+GMT<\/lastBuildDate>/, `${name} build date`);
+    assert.match(rss, new RegExp(`<sy:updatePeriod>${period}<\/sy:updatePeriod>`), `${name} update period`);
+    assert.match(rss, /<sy:updateFrequency>1<\/sy:updateFrequency>/, `${name} update frequency`);
+  }
+
+  assert.match(noteRss, /<link>https:\/\/philstephens\.com\/notes\/gravity\/<\/link>/);
+  assert.match(noteRss, /<guid isPermaLink="true">https:\/\/philstephens\.com\/notes\/gravity\/<\/guid>/);
+  assert.match(noteRss, /<atom:link href="https:\/\/www\.gravitynotes\.app\/" rel="related" type="text\/html"\/>/);
+  assert.match(noteAtom, /<link href="https:\/\/philstephens\.com\/notes\/gravity\/"\/>/);
+  assert.match(noteAtom, /<link href="https:\/\/www\.gravitynotes\.app\/" rel="related"\/>/);
+
+  const gravity = noteJson.items.find((item) => item.id === "https://philstephens.com/notes/gravity/");
+  assert.equal(gravity.url, "https://philstephens.com/notes/gravity/");
+  assert.equal(gravity.external_url, "https://www.gravitynotes.app/");
+});
+
 test("bare Markdown URLs become clickable links", async () => {
   const followPage = await readFile(path.join(outputDirectory, "follow/index.html"), "utf8");
 

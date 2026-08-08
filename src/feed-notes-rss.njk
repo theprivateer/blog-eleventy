@@ -3,17 +3,24 @@ permalink: /feed/notes/rss
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/">
   <channel>
     <title>Phil Stephens - all notes</title>
     <link>{{ site.url }}/notes/</link>
     <description>All of my notes</description>
     <language>en-AU</language>
+    <atom:link href="{{ page.url | absoluteUrl }}" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{{ collections.notes | limit(20) | latestUpdatedDate | rfc822Date }}</lastBuildDate>
+    <sy:updatePeriod>daily</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
     {% for note in collections.notes | limit(20) %}
     <item>
       <title>{{ note.data.title | xmlEscape | safe }}</title>
-      <link>{{ (note.data.link or note.url) | absoluteUrl }}</link>
+      <link>{{ note.url | absoluteUrl }}</link>
       <guid isPermaLink="true">{{ note.url | absoluteUrl }}</guid>
+      {% if note.data.link %}<atom:link href="{{ note.data.link | absoluteUrl }}" rel="related" type="text/html"/>{% endif %}
       <pubDate>{{ note.data.created_at | rfc822Date }}</pubDate>
       <description>{{ note.content | xmlEscape | safe }}</description>
     </item>

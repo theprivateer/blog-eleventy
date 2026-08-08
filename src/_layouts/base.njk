@@ -1,4 +1,8 @@
 {% set pageTitle = metadata.title or title or site.name %}
+{% set pageDescription = description %}
+{% if not pageDescription and contentType == 'home' %}
+    {% set pageDescription = site.description %}
+{% endif %}
 {% set breadcrumbCategory = collections.categories | categoryById(category_id) %}
 {% set breadcrumbItems = page.url | breadcrumbItems(pageTitle, contentType, breadcrumbCategory.data.title, pagination.pageNumber) %}
 <!DOCTYPE html>
@@ -9,12 +13,15 @@
         <link rel="shortcut icon" href="/assets/favicon.png">
 
 		<title>Phil Stephens | {{ (metadata.title or title or '') | escape }}</title>
-		<meta name="description" content="{{ description or site.description }}">
+        {% if pageDescription %}
+		<meta name="description" content="{{ pageDescription | escape }}">
+        {% endif %}
         {% if noindex %}
         <meta name="robots" content="noindex">
         {% else %}
         <link rel="canonical" href="{{ page.url | absoluteUrl }}">
         {% include "structured-data.njk" %}
+        {% include "open-graph.njk" %}
         {% endif %}
 
 		<link rel="stylesheet" href="/assets/vendor/kelp/1.17.2/kelp.css">
