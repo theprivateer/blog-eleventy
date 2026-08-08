@@ -1,0 +1,70 @@
+{% set canonicalUrl = page.url | absoluteUrl %}
+{% set pageTitle = metadata.title or title or site.name %}
+{% set pageNodeType = pageSchemaType or 'WebPage' %}
+{% set publishedDate = published_at or created_at %}
+{% set modifiedDate = updated_at or publishedDate %}
+{% set category = collections.categories | categoryById(category_id) %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ (site.url ~ '/#person') | dump | safe }},
+      "name": {{ site.author.name | dump | safe }},
+      "url": {{ site.author.url | dump | safe }},
+      "sameAs": {{ site.author.sameAs | dump | safe }}
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ (site.url ~ '/#website') | dump | safe }},
+      "url": {{ (site.url ~ '/') | dump | safe }},
+      "name": {{ site.name | dump | safe }},
+      "description": {{ site.description | dump | safe }},
+      "inLanguage": {{ site.language | dump | safe }},
+      "publisher": { "@id": {{ (site.url ~ '/#person') | dump | safe }} }
+    },
+    {
+      "@type": {{ pageNodeType | dump | safe }},
+      "@id": {{ (canonicalUrl + '#webpage') | dump | safe }},
+      "url": {{ canonicalUrl | dump | safe }},
+      "name": {{ pageTitle | dump | safe }},
+      "inLanguage": {{ site.language | dump | safe }},
+      "isPartOf": { "@id": {{ (site.url ~ '/#website') | dump | safe }} },
+      "author": { "@id": {{ (site.url ~ '/#person') | dump | safe }} }{% if description %},
+      "description": {{ description | dump | safe }}{% endif %}{% if contentType == 'post' or contentType == 'note' %},
+      "mainEntity": { "@id": {{ (canonicalUrl + '#article') | dump | safe }} }{% elif pageNodeType === 'ProfilePage' %},
+      "mainEntity": { "@id": {{ (site.url ~ '/#person') | dump | safe }} }{% endif %}{% if breadcrumbItems.length %},
+      "breadcrumb": { "@id": {{ (canonicalUrl + '#breadcrumb') | dump | safe }} }{% endif %}
+    }{% if contentType == 'post' or contentType == 'note' %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ (canonicalUrl + '#article') | dump | safe }},
+      "url": {{ canonicalUrl | dump | safe }},
+      "headline": {{ title | dump | safe }},
+      "mainEntityOfPage": { "@id": {{ (canonicalUrl + '#webpage') | dump | safe }} },
+      "author": { "@id": {{ (site.url ~ '/#person') | dump | safe }} },
+      "publisher": { "@id": {{ (site.url ~ '/#person') | dump | safe }} },
+      "inLanguage": {{ site.language | dump | safe }}{% if description %},
+      "description": {{ description | dump | safe }}{% endif %}{% if publishedDate %},
+      "datePublished": {{ (publishedDate | rfc3339Date) | dump | safe }}{% endif %}{% if modifiedDate %},
+      "dateModified": {{ (modifiedDate | rfc3339Date) | dump | safe }}{% endif %}{% if category %},
+      "articleSection": {{ category.data.title | dump | safe }}{% endif %}
+    }{% endif %}{% if breadcrumbItems.length %},
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ (canonicalUrl + '#breadcrumb') | dump | safe }},
+      "itemListElement": [
+        {% for item in breadcrumbItems %}
+        {
+          "@type": "ListItem",
+          "position": {{ loop.index }},
+          "name": {{ item.name | dump | safe }},
+          "item": {{ item.url | dump | safe }}
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+      ]
+    }{% endif %}
+  ]
+}
+</script>

@@ -1,6 +1,7 @@
 ---
 title: Resume
 layout: resume.njk
+pageSchemaType: ProfilePage
 draft: false
 created_at: 2026-01-11T21:27:01+10:00
 updated_at: 2026-07-07T15:35:13+10:00

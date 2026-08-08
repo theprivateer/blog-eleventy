@@ -1,3 +1,6 @@
+{% set pageTitle = metadata.title or title or site.name %}
+{% set breadcrumbCategory = collections.categories | categoryById(category_id) %}
+{% set breadcrumbItems = page.url | breadcrumbItems(pageTitle, contentType, breadcrumbCategory.data.title, pagination.pageNumber) %}
 <!DOCTYPE html>
 <html lang="en-AU">
 	<head>
@@ -7,13 +10,17 @@
 
 		<title>Phil Stephens | {{ (metadata.title or title or '') | escape }}</title>
 		<meta name="description" content="{{ description or site.description }}">
+        {% if noindex %}
+        <meta name="robots" content="noindex">
+        {% else %}
+        <link rel="canonical" href="{{ page.url | absoluteUrl }}">
+        {% include "structured-data.njk" %}
+        {% endif %}
 
 		<link rel="stylesheet" href="/assets/vendor/kelp/1.17.2/kelp.css">
         <link rel="preload" href="/assets/vendor/inclusive-sans/v5/inclusive-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="stylesheet" href="/assets/vendor/inclusive-sans/v5/inclusive-sans.css">
-        <script
-            src="/assets/vendor/kelp/1.17.2/dark-mode-auto.js"
-        ></script>
+        <script src="/assets/vendor/kelp/1.17.2/dark-mode-auto.js"></script>
         {% if 'class="language-' in content %}
         <link rel="stylesheet" href="/assets/vendor/prism/1.30.0/themes/prism-twilight.min.css">
         {% endif %}
@@ -59,6 +66,22 @@
                 display: block;
                 margin: 0 auto;
             }
+
+            .breadcrumbs ol {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4rem;
+                margin: 0 0 1.5rem;
+                padding: 0;
+                list-style: none;
+                font-size: 0.875em;
+            }
+
+            .breadcrumbs li + li::before {
+                margin-right: 0.4rem;
+                color: var(--color-text-muted);
+                content: "/";
+            }
         </style>
 	</head>
 	<body>
@@ -78,6 +101,7 @@
             </nav>
         </header>
 		<main id="main-content" class="container" tabindex="-1">
+            {% include "breadcrumbs.njk" %}
             {{ content | safe }}
         </main>
 

@@ -1,5 +1,6 @@
 ---
 title: About
+pageSchemaType: ProfilePage
 draft: false
 created_at: 2026-01-05T14:39:05+10:00
 updated_at: 2026-07-07T15:38:25+10:00

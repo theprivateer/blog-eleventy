@@ -5,6 +5,8 @@ pagination:
   alias: category
 permalink: "/category/{{ category.fileSlug }}/index.html"
 layout: base.njk
+contentType: category
+pageSchemaType: CollectionPage
 eleventyComputed:
   title: "Category: {{ category.data.title }}"
   description: "{{ category.data.metadata.description }}"

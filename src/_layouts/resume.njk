@@ -1,3 +1,5 @@
+{% set pageTitle = metadata.title or title or site.name %}
+{% set breadcrumbItems = [] %}
 <!DOCTYPE html>
 <html lang="en-AU">
 	<head>
@@ -7,6 +9,8 @@
 
 		<title>Phil Stephens | {{ (metadata.title or title or '') | escape }}</title>
 		<meta name="description" content="{{ description or site.description }}">
+        <link rel="canonical" href="{{ page.url | absoluteUrl }}">
+        {% include "structured-data.njk" %}
 
 		<link rel="stylesheet" href="/assets/vendor/kelp/1.17.2/kelp.css">
         <link rel="preload" href="/assets/vendor/inclusive-sans/v5/inclusive-sans-normal-latin.woff2" as="font" type="font/woff2" crossorigin>

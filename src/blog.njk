@@ -1,6 +1,8 @@
 ---
 layout: base.njk
 title: Blog
+contentType: blogArchive
+pageSchemaType: CollectionPage
 eleventyComputed:
   description: 'Longer writing about software, engineering leadership, technology, work and the personal interests that shape how I think.{% if pagination.pageNumber > 0 %} This is page {{ pagination.pageNumber + 1 }} of the archive.{% endif %}'
 pagination:

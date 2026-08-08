@@ -8,6 +8,29 @@ function byDateDescending(a, b) {
   return new Date(b.data.published_at ?? b.data.created_at) - new Date(a.data.published_at ?? a.data.created_at);
 }
 
+function breadcrumbItems(url, title, contentType, pageNumber) {
+  if (!url || url === "/" || url === "/404.html") {
+    return [];
+  }
+
+  const items = [{ name: "Home", path: "/", url: `${SITE_URL}/` }];
+
+  if (contentType === "post" || contentType === "category") {
+    items.push({ name: "Blog", path: "/blog/", url: `${SITE_URL}/blog/` });
+  } else if (contentType === "note") {
+    items.push({ name: "Notes", path: "/notes/", url: `${SITE_URL}/notes/` });
+  }
+
+  const archivePage = Number(pageNumber);
+  const name = Number.isInteger(archivePage) && archivePage > 0
+    ? `${title}, page ${archivePage + 1}`
+    : title;
+
+  items.push({ name, path: url, url: new URL(url, SITE_URL).toString() });
+
+  return items;
+}
+
 function xmlEscape(value = "") {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -59,6 +82,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("limit", (items, count) => items.slice(0, count));
   eleventyConfig.addFilter("startsWith", (value, prefix) => String(value).startsWith(prefix));
   eleventyConfig.addFilter("absoluteUrl", (url) => new URL(url, SITE_URL).toString());
+  eleventyConfig.addFilter("breadcrumbItems", breadcrumbItems);
   eleventyConfig.addFilter("xmlEscape", xmlEscape);
   eleventyConfig.addFilter("jsonStringify", (value) => JSON.stringify(value, null, 2));
   eleventyConfig.addFilter("readableDate", (value, includeWeekday = false) =>
@@ -97,6 +121,12 @@ export default function (eleventyConfig) {
     author: {
       name: "Phil Stephens",
       email: "hello@philstephens.com",
+      url: `${SITE_URL}/about/`,
+      sameAs: [
+        "https://linkedin.com/in/phil-stephens",
+        "https://github.com/theprivateer",
+        "https://www.strava.com/athletes/389199",
+      ],
     },
   });
 

@@ -66,7 +66,80 @@ test("custom 404 page is built and excluded from the sitemap", async () => {
   assert.match(notFoundPage, /<title>Phil Stephens \| Page not found<\/title>/);
   assert.match(notFoundPage, /<h1>Page not found<\/h1>/);
   assert.match(notFoundPage, /<a href="\/">Return to the homepage<\/a>/);
+  assert.match(notFoundPage, /<meta name="robots" content="noindex">/);
+  assert.doesNotMatch(notFoundPage, /<link rel="canonical"/);
+  assert.doesNotMatch(notFoundPage, /application\/ld\+json/);
   assert.doesNotMatch(sitemap, /<loc>https:\/\/philstephens\.com\/404\.html<\/loc>/);
+});
+
+test("every public page has a self-canonical URL and page-specific structured data", async () => {
+  const htmlFiles = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
+  const publicPages = [];
+
+  for (const file of htmlFiles) {
+    const html = await readFile(file, "utf8");
+    const relativePath = path.relative(outputDirectory, file).split(path.sep).join("/");
+
+    if (relativePath === "404.html" || /<meta http-equiv="refresh"/i.test(html)) {
+      continue;
+    }
+
+    publicPages.push({ file, html, relativePath });
+  }
+
+  assert.equal(publicPages.length, 184);
+
+  const canonicalUrls = new Set();
+
+  for (const { html, relativePath } of publicPages) {
+    const expectedPath = relativePath === "index.html"
+      ? "/"
+      : `/${relativePath.replace(/index\.html$/, "")}`;
+    const expectedCanonical = new URL(expectedPath, "https://philstephens.com").toString();
+    const canonicals = [...html.matchAll(/<link rel="canonical" href="([^"]+)">/g)];
+
+    assert.equal(canonicals.length, 1, `canonical count: ${relativePath}`);
+    assert.equal(canonicals[0][1], expectedCanonical, `self-canonical: ${relativePath}`);
+    canonicalUrls.add(expectedCanonical);
+
+    const jsonLdBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
+    assert.equal(jsonLdBlocks.length, 1, `JSON-LD count: ${relativePath}`);
+
+    const structuredData = JSON.parse(jsonLdBlocks[0][1]);
+    assert.equal(structuredData["@context"], "https://schema.org", `schema context: ${relativePath}`);
+    assert.ok(Array.isArray(structuredData["@graph"]), `schema graph: ${relativePath}`);
+
+    const types = new Set(structuredData["@graph"].map((node) => node["@type"]));
+    assert.ok(types.has("Person"), `Person schema: ${relativePath}`);
+    assert.ok(types.has("WebSite"), `WebSite schema: ${relativePath}`);
+    assert.ok(
+      ["WebPage", "ProfilePage", "CollectionPage"].some((type) => types.has(type)),
+      `page schema: ${relativePath}`,
+    );
+
+    const pathname = new URL(expectedCanonical).pathname;
+    const isPost = /^\/blog\/(?!page\/\d+\/$)[^/]+\/$/.test(pathname);
+    const isNote = /^\/notes\/(?!page\/\d+\/$)[^/]+\/$/.test(pathname);
+
+    if (isPost || isNote) {
+      assert.ok(types.has("BlogPosting"), `BlogPosting schema: ${relativePath}`);
+      const article = structuredData["@graph"].find((node) => node["@type"] === "BlogPosting");
+      assert.ok(article.headline, `article headline: ${relativePath}`);
+      assert.ok(article.datePublished, `article published date: ${relativePath}`);
+      assert.ok(article.dateModified, `article modified date: ${relativePath}`);
+    }
+
+    if (pathname !== "/" && pathname !== "/resume/") {
+      assert.ok(types.has("BreadcrumbList"), `BreadcrumbList schema: ${relativePath}`);
+      assert.match(html, /<nav class="breadcrumbs" aria-label="Breadcrumb">/, `visible breadcrumb: ${relativePath}`);
+    }
+  }
+
+  const sitemap = await readFile(path.join(outputDirectory, "sitemap.xml"), "utf8");
+  const sitemapUrls = new Set([...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1]));
+
+  assert.equal(sitemapUrls.size, 184);
+  assert.deepEqual([...sitemapUrls].sort(), [...canonicalUrls].sort());
 });
 
 test("draft pages are retained as source but not published", async () => {

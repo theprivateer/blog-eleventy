@@ -4,6 +4,7 @@ function slugFromStem(stem) {
 
 export default {
   layout: "post.njk",
+  contentType: "post",
   eleventyComputed: {
     permalink: (data) => `/blog/${slugFromStem(data.page.filePathStem)}/index.html`,
     date: (data) => data.published_at,

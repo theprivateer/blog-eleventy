@@ -17,6 +17,8 @@ The site contains four content types:
 
 Directory data files translate content fields such as `published_at`, `category_id`, and `draft` into Eleventy dates, collections, and permalinks. Pages can use Eleventy's native `layout` frontmatter when they need presentation beyond the standard page layout.
 
+Every public page has a self-referencing canonical URL and a JSON-LD graph describing the site, author and current page. Posts and notes add `BlogPosting`; profile and archive routes use `ProfilePage` and `CollectionPage`; and the visible breadcrumb trail is mirrored by `BreadcrumbList`. The sitemap is generated from the same public collections and archive pagination so these URL signals remain aligned.
+
 The frontend is a direct Nunjucks translation of the original Blade views. It uses locally served copies of Kelp UI 1.17.2, Inclusive Sans, and Prism 1.30.0 while retaining the original utility classes, sizes, spacing, colours, and inline SVGs. Pages containing fenced code blocks load Prism's Twilight theme and only the local language grammars required by that page; pages without code do not load Prism.
 
 ## Information architecture
@@ -79,7 +81,7 @@ Pages with `draft: true` remain in `src/content/pages` but are excluded from col
 │   ├── categories.njk        # Category archive generator
 │   ├── index.njk             # Homepage
 │   ├── feed-*.njk            # RSS, Atom and JSON feed templates
-│   └── sitemap.njk           # XML sitemap template
+│   └── sitemap.11ty.js       # Complete XML sitemap generator
 ├── tests/
 │   └── site.test.js          # Generated-site checks
 └── _site/                    # Generated output; never edit directly
@@ -173,6 +175,7 @@ The tests build from a clean output directory and verify that:
 - Kelp, Inclusive Sans, Prism, and their licences are copied from the local vendor directories;
 - content images have alt text, use WebP, load lazily, decode asynchronously, and resolve to local source files;
 - rendered documents have a valid heading hierarchy, working skip link, and an accessible SVG homepage link;
+- all 184 public pages have one self-canonical URL, valid page-specific JSON-LD, matching breadcrumbs, and a corresponding sitemap entry;
 - the built `_headers` file contains the expected Cloudflare security policy;
 - site-level Nunjucks variables are fully rendered; and
 - internal links resolve to generated files, apart from explicitly recorded historical links whose source targets no longer exist.
