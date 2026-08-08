@@ -137,12 +137,83 @@ test("bare Markdown URLs become clickable links", async () => {
 test("code pages load Prism with the Twilight theme on demand", async () => {
   const codePage = await readFile(path.join(outputDirectory, "blog/adding-reading-time-to-a-jigsaw-blog/index.html"), "utf8");
   const contentPage = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+  const prismDirectory = path.join(outputDirectory, "assets/vendor/prism/1.30.0");
+  const prismFiles = [
+    "themes/prism-twilight.min.css",
+    "components/prism-core.min.js",
+    "plugins/autoloader/prism-autoloader.min.js",
+    "components/prism-markup.min.js",
+    "components/prism-css.min.js",
+    "components/prism-clike.min.js",
+    "components/prism-javascript.min.js",
+    "components/prism-markup-templating.min.js",
+    "components/prism-php.min.js",
+    "components/prism-bash.min.js",
+    "components/prism-json.min.js",
+    "components/prism-sql.min.js",
+    "components/prism-twig.min.js",
+    "LICENSE.txt",
+  ];
 
   assert.match(codePage, /class="language-php"/);
-  assert.match(codePage, /prism\/1\.30\.0\/themes\/prism-twilight\.min\.css/);
-  assert.match(codePage, /prism\/1\.30\.0\/components\/prism-core\.min\.js/);
-  assert.match(codePage, /prism\/1\.30\.0\/plugins\/autoloader\/prism-autoloader\.min\.js/);
-  assert.doesNotMatch(contentPage, /cdnjs\.cloudflare\.com\/ajax\/libs\/prism/);
+  assert.match(codePage, /href="\/assets\/vendor\/prism\/1\.30\.0\/themes\/prism-twilight\.min\.css"/);
+  assert.match(codePage, /src="\/assets\/vendor\/prism\/1\.30\.0\/components\/prism-core\.min\.js"/);
+  assert.match(codePage, /src="\/assets\/vendor\/prism\/1\.30\.0\/plugins\/autoloader\/prism-autoloader\.min\.js"/);
+  assert.doesNotMatch(codePage, /cdnjs\.cloudflare\.com\/ajax\/libs\/prism/);
+  assert.doesNotMatch(contentPage, /(?:cdnjs\.cloudflare\.com\/ajax\/libs\/prism|\/assets\/vendor\/prism\/)/);
+
+  for (const file of prismFiles) {
+    assert.ok((await stat(path.join(prismDirectory, file))).isFile(), file);
+  }
+});
+
+test("Kelp build assets are served locally", async () => {
+  const contentPage = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+  const resumePage = await readFile(path.join(outputDirectory, "resume/index.html"), "utf8");
+  const colophonPage = await readFile(path.join(outputDirectory, "colophon/index.html"), "utf8");
+  const kelpDirectory = path.join(outputDirectory, "assets/vendor/kelp/1.17.2");
+
+  assert.match(contentPage, /href="\/assets\/vendor\/kelp\/1\.17\.2\/kelp\.css"/);
+  assert.match(contentPage, /src="\/assets\/vendor\/kelp\/1\.17\.2\/dark-mode-auto\.js"/);
+  assert.match(resumePage, /href="\/assets\/vendor\/kelp\/1\.17\.2\/kelp\.css"/);
+  assert.doesNotMatch(contentPage, /cdn\.jsdelivr\.net\/npm\/kelpui/);
+  assert.doesNotMatch(resumePage, /cdn\.jsdelivr\.net\/npm\/kelpui/);
+  assert.match(colophonPage, /does not use cookies, analytics or tracking/);
+
+  for (const file of ["kelp.css", "dark-mode-auto.js", "LICENSE.txt"]) {
+    assert.ok((await stat(path.join(kelpDirectory, file))).isFile(), file);
+  }
+});
+
+test("Inclusive Sans font assets are served locally", async () => {
+  const contentPage = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+  const resumePage = await readFile(path.join(outputDirectory, "resume/index.html"), "utf8");
+  const fontDirectory = path.join(outputDirectory, "assets/vendor/inclusive-sans/v5");
+  const fontStyles = await readFile(path.join(fontDirectory, "inclusive-sans.css"), "utf8");
+  const fontFiles = [
+    "inclusive-sans-italic-vietnamese.woff2",
+    "inclusive-sans-italic-latin-ext.woff2",
+    "inclusive-sans-italic-latin.woff2",
+    "inclusive-sans-normal-vietnamese.woff2",
+    "inclusive-sans-normal-latin-ext.woff2",
+    "inclusive-sans-normal-latin.woff2",
+  ];
+
+  for (const page of [contentPage, resumePage]) {
+    assert.match(page, /rel="preload" href="\/assets\/vendor\/inclusive-sans\/v5\/inclusive-sans-normal-latin\.woff2" as="font" type="font\/woff2" crossorigin/);
+    assert.match(page, /href="\/assets\/vendor\/inclusive-sans\/v5\/inclusive-sans\.css"/);
+    assert.doesNotMatch(page, /fonts\.(?:googleapis|gstatic)\.com/);
+  }
+
+  assert.match(fontStyles, /font-style: normal;/);
+  assert.match(fontStyles, /font-style: italic;/);
+  assert.match(fontStyles, /font-weight: 300 700;/);
+  assert.match(fontStyles, /font-display: swap;/);
+  assert.doesNotMatch(fontStyles, /fonts\.(?:googleapis|gstatic)\.com/);
+
+  for (const file of [...fontFiles, "inclusive-sans.css", "OFL.txt"]) {
+    assert.ok((await stat(path.join(fontDirectory, file))).isFile(), file);
+  }
 });
 
 test("content images have alt text, load lazily, and are copied into the built site", async () => {
