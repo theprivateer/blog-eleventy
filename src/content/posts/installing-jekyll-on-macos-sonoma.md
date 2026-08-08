@@ -16,7 +16,7 @@ Instead you need to use a Ruby-specific version manager to install a newer versi
 
 ## Install a newer version of Ruby
 
-Install `chruby` and `ruby-install` with Homebrew (if you don’t have Homebrew installed yet, follow the instructions [here](https://brew.sh/#install)):
+Install `chruby` and `ruby-install` with Homebrew (if you don’t have Homebrew installed yet, follow the [Homebrew installation instructions](https://brew.sh/#install)):
 
 ```bash
 brew install chruby ruby-install xz

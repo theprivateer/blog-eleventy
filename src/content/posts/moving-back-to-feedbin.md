@@ -38,4 +38,4 @@ I no longer want to have the _content_ I want to consume to be mixed in with ema
 
 Now all of my content gets fed-in using Feedbin, and I can either consume it via Reeder, or directly on the Feedbin site. Rather than flip-flopping around looking at other options (like I did the last time I used Feedbin) I want to stick with it this time, so I’ve been bullish and subscribed for a whole year upfront for $50.
 
-Incidentally, if you’re interested in what sorts of content I subscribe to you can check out some highlights on my [blogroll](/blogroll) - plus my entire OPML export [here](/blogroll.opml).
+Incidentally, if you’re interested in what sorts of content I subscribe to, I’ve shared some highlights on my blogroll.

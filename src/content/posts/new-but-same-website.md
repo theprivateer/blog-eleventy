@@ -20,4 +20,4 @@ I’d like to document this process as a I go - my initial thoughts are a series
 
 There’s nothing groundbreaking in what I’m doing here, but that’s not really the point. I’m leveraging existing packages and native Laravel / Filament features as much as possible, without the need to write novel code. I’m creating this for myself, and publishing some of the useful things I find along the way may just help somebody else.
 
-If you want to follow along or even use my site to power your own blog, you can find it [here](https://github.com/theprivateer/philstephens-dot-com).
+If you want to follow along or even use my site to power your own blog, you can [view the site’s source code on GitHub](https://github.com/theprivateer/philstephens-dot-com).

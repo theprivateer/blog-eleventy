@@ -17,7 +17,7 @@ The site contains four content types:
 
 Directory data files translate content fields such as `published_at`, `category_id`, and `draft` into Eleventy dates, collections, and permalinks. Pages can use Eleventy's native `layout` frontmatter when they need presentation beyond the standard page layout.
 
-The frontend is a direct Nunjucks translation of the original Blade views. It loads Kelp UI v1 from its CDN, uses Inclusive Sans, and retains the original utility classes, sizes, spacing, colours, and inline SVGs. Pages containing fenced code blocks load Prism and its Twilight theme from cdnjs; Prism's autoloader fetches only the language grammars required by that page.
+The frontend is a direct Nunjucks translation of the original Blade views. It uses locally served copies of Kelp UI 1.17.2, Inclusive Sans, and Prism 1.30.0 while retaining the original utility classes, sizes, spacing, colours, and inline SVGs. Pages containing fenced code blocks load Prism's Twilight theme and only the local language grammars required by that page; pages without code do not load Prism.
 
 ## Information architecture
 
@@ -35,6 +35,7 @@ The frontend is a direct Nunjucks translation of the original Blade views. It lo
 | `/category/{slug}/` | Posts belonging to a category |
 | `/{page}/` | Standalone content page |
 | `/resume/` | Resume using its dedicated, headerless layout |
+| `/404.html` | Custom not-found page used by Cloudflare Pages |
 
 Legacy `/posts` and `/posts/{slug}` paths are represented by static redirect pages and hosting rules that point to their `/blog` equivalents.
 
@@ -49,7 +50,7 @@ Posts and notes each provide RSS, Atom, and JSON feeds at the original extension
 - `/feed/notes/atom`
 - `/feed/notes/json`
 
-The build also generates `/sitemap.xml` and copies `robots.txt`, `_redirects`, and `_headers` into the output directory. `_headers` supplies the appropriate content types for extensionless feeds on hosts that support this convention.
+The build also generates `/sitemap.xml` and copies `robots.txt`, `_redirects`, and `_headers` into the output directory. `_headers` supplies the appropriate content types for extensionless feeds and applies the site's HSTS, CSP `frame-ancestors`, and `X-Frame-Options` security headers on Cloudflare Pages.
 
 ### Drafts
 
@@ -66,8 +67,13 @@ Pages with `draft: true` remain in `src/content/pages` but are excluded from col
 │   ├── _data/                # Global build data
 │   ├── _includes/            # Shared Nunjucks fragments and inline SVG markup
 │   ├── _layouts/             # Base, post, note, page and resume layouts
-│   ├── assets/               # Static assets copied into the build
+│   ├── assets/
+│   │   ├── images/           # WebP content images
+│   │   └── vendor/           # Versioned Kelp, Inclusive Sans and Prism builds
 │   ├── content/              # Posts, notes, pages and categories in Markdown
+│   ├── 404.njk               # Custom not-found page
+│   ├── _headers              # Feed content types and Cloudflare security headers
+│   ├── _redirects            # Legacy hosting redirects
 │   ├── blog.njk              # Paginated post archive
 │   ├── notes.njk             # Paginated notes archive
 │   ├── categories.njk        # Category archive generator
@@ -78,6 +84,18 @@ Pages with `draft: true` remain in `src/content/pages` but are excluded from col
 │   └── site.test.js          # Generated-site checks
 └── _site/                    # Generated output; never edit directly
 ```
+
+### Frontend assets
+
+Third-party frontend build artifacts are committed beneath `src/assets/vendor` and copied unchanged into the generated site. The production pages do not depend on a public asset CDN.
+
+| Dependency | Vendored version | Path | Loading behaviour |
+| --- | --- | --- | --- |
+| Kelp UI | 1.17.2 | `src/assets/vendor/kelp/1.17.2` | CSS on every page; dark-mode helper on the standard layout |
+| Inclusive Sans | Google Fonts delivery revision v5 | `src/assets/vendor/inclusive-sans/v5` | Local variable WOFF2 subsets with the normal Latin subset preloaded |
+| Prism | 1.30.0 | `src/assets/vendor/prism/1.30.0` | Twilight theme, core, and required grammars on code pages only |
+
+Each dependency directory includes its licence. These are downloaded build assets rather than packages compiled during the Eleventy build. If a dependency is upgraded, replace its versioned directory, update the layout URLs and adjust the corresponding generated-site test.
 
 ## Getting started
 
@@ -135,7 +153,7 @@ Content images live in `src/assets/images` and use site-root-relative Markdown p
 ![Alternative text](/assets/images/example.webp)
 ```
 
-Give every content image concise alternative text that communicates its purpose in the surrounding article. Content images are stored as WebP files. Eleventy copies them unchanged to `_site/assets/images` during each build, so content does not depend on the former `assets.philstephens.com` bucket or require image processing during deployment.
+Give every content image concise alternative text that communicates its purpose in the surrounding article. Content images are stored as WebP files. The Markdown renderer automatically adds `loading="lazy"` and `decoding="async"` to their generated `<img>` elements. Eleventy copies the source files unchanged to `_site/assets/images` during each build, so content does not depend on the former `assets.philstephens.com` bucket or require image processing during deployment.
 
 ## Testing
 
@@ -147,11 +165,16 @@ npm test
 
 The tests build from a clean output directory and verify that:
 
-- every migrated post, note, and category route is generated;
-- key pages and all six feed files exist;
-- draft pages are not published;
-- content image references are local and every source image is copied into the build;
-- site-level Nunjucks variables are fully rendered;
+- every migrated post, note, category, key page, feed, and custom 404 output is generated;
+- draft pages are not published and stale output cannot survive a clean build;
+- post and note filenames remain slug-only and archives follow their frontmatter dates;
+- page-specific layouts and document-title metadata behave as intended;
+- bare Markdown URLs become links and Prism loads locally only on pages containing code;
+- Kelp, Inclusive Sans, Prism, and their licences are copied from the local vendor directories;
+- content images have alt text, use WebP, load lazily, decode asynchronously, and resolve to local source files;
+- rendered documents have a valid heading hierarchy, working skip link, and an accessible SVG homepage link;
+- the built `_headers` file contains the expected Cloudflare security policy;
+- site-level Nunjucks variables are fully rendered; and
 - internal links resolve to generated files, apart from explicitly recorded historical links whose source targets no longer exist.
 
 For an additional XML check when `xmllint` is available:
