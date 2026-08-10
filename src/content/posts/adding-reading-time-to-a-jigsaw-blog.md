@@ -7,7 +7,7 @@ created_at: 2021-01-17T10:00:00+10:00
 updated_at: 2026-02-06T16:01:19+10:00
 metadata:
     title: null
-    description: 'Here’s how I added estimated reading times to a Jigsaw blog with a small PHP function and the afterCollections event.'
+    description: 'My Jigsaw blog now calculates an estimated reading time for every post. Here’s the small PHP function and afterCollections hook that make it work.'
 ---
 
 I recently added a simple 'estimated reading time' indicator to the posts on my blog - a simple enough task in PHP, and just as easy with static websites built with [Jigsaw](https://jigsaw.tighten.co) (like this one).

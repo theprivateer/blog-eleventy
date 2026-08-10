@@ -7,7 +7,7 @@ created_at: 2026-01-16T15:30:08+10:00
 updated_at: 2026-02-02T18:05:18+10:00
 metadata:
     title: null
-    description: 'I’m using AI to filter information and protect my attention, while keeping human judgement firmly in charge of the decisions that matter.'
+    description: 'I’m using AI to filter the information competing for my attention. Here’s where automation protects my time—and where human judgement still has to lead.'
 ---
 
 This year, I'm deliberately rethinking my relationship with technology, and AI sits right at the centre of that shift. Not because I'm chasing novelty, but because the pace and volume of information in everyday life have crossed a threshold where old approaches are no longer enough.

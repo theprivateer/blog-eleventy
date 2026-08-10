@@ -7,7 +7,7 @@ created_at: 2022-08-13T10:00:00+10:00
 updated_at: 2022-08-13T10:00:00+10:00
 metadata:
     title: null
-    description: 'I’m available to help with career questions, CV feedback, introductions, technical problems and testing an idea before you invest too much in it.'
+    description: 'If I can help, I want people to feel comfortable asking. Here are the career questions, CV reviews, introductions and technical problems I can assist with.'
 ---
 
 Over the past 15+ years I've worked with some great (and some not-so-great) people to whom I owe a lot. I've worked at award-winning marketing agencies, tech start-ups, mature scale-ups and total f**k-ups. I've learnt a lot about what works (and even more about what doesn't), and now it's my turn to give something back.

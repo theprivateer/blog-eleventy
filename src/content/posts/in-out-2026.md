@@ -7,7 +7,7 @@ created_at: 2026-01-02T10:00:00+10:00
 updated_at: 2026-01-19T16:43:35+10:00
 metadata:
     title: null
-    description: 'My in-and-out list for 2026: more running, cycling, self-care and useful AI; less FOMO, hesitation and energy spent on things I cannot control.'
+    description: 'My priorities for 2026 fit into one in-and-out list. There’s more running, cycling, self-care and useful AI—and less FOMO, hesitation and wasted energy.'
 ---
 
 2026 for me, will aim to be:

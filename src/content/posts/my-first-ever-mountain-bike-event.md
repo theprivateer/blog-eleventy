@@ -7,7 +7,7 @@ created_at: 2021-01-19T10:00:00+10:00
 updated_at: 2026-02-07T10:13:55+10:00
 metadata:
     title: null
-    description: 'I’ve entered my first mountain bike event: four hours of endurance racing at Kooralbyn, with one modest goal—keep riding and finish.'
+    description: 'I’ve entered my first mountain-bike event: four hours of endurance racing at Kooralbyn. My plan is modest—keep moving, manage the effort and finish.'
 ---
 
 Today I registered for my first mountain bike event of the year (and technically, ever).  I've only ever done mass-participation road events such as the [Noosa Classic](https://cyclingclassics.com.au/noosa/) and the [Great Brisbane Bike Ride](https://gbbr.com.au) so this will certainly be a first for me.

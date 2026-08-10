@@ -7,7 +7,7 @@ created_at: 2024-03-13T10:00:00+10:00
 updated_at: 2024-03-13T10:00:00+10:00
 metadata:
     title: null
-    description: 'Fig made the terminal dramatically better, then disappeared after its AWS acquisition. I’m grateful it existed and frustrated by how it ended.'
+    description: 'Fig made the terminal dramatically better, then disappeared after AWS acquired it. Here’s why I’m grateful it existed and frustrated by how it ended.'
 ---
 
 Today [Fig](https://fig.io/) announced that they would be sunsetting their excellent command-line tool later this year, having been acquired by AWS and rolled-into the ~~CodeWhisperer~~ [Amazon Q](https://docs.aws.amazon.com/amazonq/) team.

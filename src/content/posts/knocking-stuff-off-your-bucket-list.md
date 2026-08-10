@@ -7,7 +7,7 @@ created_at: 2023-07-06T10:00:00+10:00
 updated_at: 2023-07-06T10:00:00+10:00
 metadata:
     title: null
-    description: 'The Crocodile Trophy disappeared before I got the chance to ride it—a reminder that bucket-list plans need dates, not indefinite postponement.'
+    description: 'The Crocodile Trophy disappeared before I found the courage to enter it. That missed chance taught me why a bucket-list ambition needs a date.'
 ---
 
 One of my bucket list items is to compete in (and finish) the [Crocodile Trophy](https://www.croctrophy.com/) - a staged mountain bike race in tropical North Queensland.

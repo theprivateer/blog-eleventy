@@ -7,7 +7,7 @@ created_at: 2018-03-14T10:00:00+10:00
 updated_at: 2026-02-07T10:05:30+10:00
 metadata:
     title: null
-    description: 'I’m building Household to make family organisation less complicated, starting with a focused task list and practical tools for shared planning.'
+    description: 'Family organisation should not require a complicated project-management system. Here’s why I’m building Household around focused tasks and shared planning.'
 ---
 
 I've spent a lot of late nights and early mornings over the past month helping my wife launch her new side-project - **Household**.

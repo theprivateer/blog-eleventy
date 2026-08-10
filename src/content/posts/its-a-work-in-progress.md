@@ -7,7 +7,7 @@ created_at: 2024-04-25T10:00:00+10:00
 updated_at: 2024-04-25T10:00:00+10:00
 metadata:
     title: null
-    description: 'Back from the UK and still jet-lagged, I’m turning my attention to this site: refining the design and deciding what deserves a permanent page.'
+    description: 'I’m back from the UK, still jet-lagged and ready to work on this site again. Next comes refining the design and deciding which pages deserve to stay.'
 ---
 
 Now that I'm back from my trip to the UK and am (mostly) recovered from the jetlag / generally feeling under-the-weather it's time to start focussing on this site.

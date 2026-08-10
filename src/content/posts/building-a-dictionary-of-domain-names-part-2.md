@@ -7,7 +7,7 @@ created_at: 2017-07-30T10:00:00+10:00
 updated_at: 2026-02-06T16:01:41+10:00
 metadata:
     title: null
-    description: 'In part two, I connect the Laravel app to Domainr, queue availability checks, store the results and schedule them to stay current.'
+    description: 'The domain dictionary can generate names; now it needs to know which are available. Here’s how Domainr, queued checks and scheduled updates complete the Laravel app.'
 ---
 
 [Previously I discussed a little hobby project](/blog/building-a-dictionary-of-domain-names) that I was working on to build out a dictionary of words that could be made into complete domain names (i.e. the whole domain, including the TLD extension, forms the word).

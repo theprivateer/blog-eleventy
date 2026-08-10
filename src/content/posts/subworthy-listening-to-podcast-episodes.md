@@ -7,7 +7,7 @@ created_at: 2022-02-02T10:00:00+10:00
 updated_at: 2026-02-07T10:04:38+10:00
 metadata:
     title: null
-    description: 'I added podcast support to Subworthy, so new episodes can be played directly from the same daily email issue as articles and videos.'
+    description: 'Subworthy can now play podcast episodes alongside articles and videos. Here’s how audio became part of the same daily email issue.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy/).**_

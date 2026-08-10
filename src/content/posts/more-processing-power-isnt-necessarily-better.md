@@ -7,7 +7,7 @@ created_at: 2025-02-03T17:38:21+10:00
 updated_at: 2026-04-01T12:58:32+10:00
 metadata:
     title: null
-    description: 'My M4 Pro makes inefficient local code feel fast. That convenience is useful, but it can also hide problems that production will eventually expose.'
+    description: 'My M4 Pro makes inefficient local code feel deceptively fast. Here’s how powerful development hardware can hide problems that production eventually exposes.'
 ---
 
 At work we use a unified development environment in Docker. This allows us to simulate all of the interconnected services and workloads of our production Kubernetes clusters, which is pretty awesome.

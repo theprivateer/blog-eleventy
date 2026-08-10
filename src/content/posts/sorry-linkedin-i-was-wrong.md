@@ -7,7 +7,7 @@ created_at: 2017-06-20T10:00:00+10:00
 updated_at: 2017-06-20T10:00:00+10:00
 metadata:
     title: null
-    description: 'I dismissed LinkedIn along with Facebook, but returning to it showed me a useful professional network hiding beneath the usual social-media noise.'
+    description: 'I dismissed LinkedIn as another noisy social network, then reluctantly returned. Underneath the clutter, I found a professional network that was genuinely useful.'
 ---
 
 About a year ago I gave up on Facebook, it was becoming too much of a distraction and filled more an more with pointless shit.  If I didn't post anything for a week, I would get comments like "What's wrong with you? You haven't posted for _ages_" - which just seems wrong.  I still kept my Twitter and Instagram going, but more for their voyeuristic qualities, but I can honestly say that I have not missed being on Facebook, not one iota.

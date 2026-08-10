@@ -7,7 +7,7 @@ created_at: 2021-12-26T10:00:00+10:00
 updated_at: 2026-02-07T10:14:25+10:00
 metadata:
     title: null
-    description: 'I retired my ageing Garmin Edge 800 for a Wahoo ELEMNT BOLT. Better maps, simple setup and automatic uploads made the difference immediately.'
+    description: 'I replaced my ageing Garmin Edge 800 with a Wahoo ELEMNT BOLT. Here’s how better maps, easier setup and automatic uploads made the difference.'
 ---
 
 After over nine years of reliable service, I have retired my original [Garmin Edge 800](https://www.garmin.com/en-AU/p/69043) cycle computer.  I originally purchased it to use on my Land's End to John o'Groats ride back in 2012, and despite an issue early on with the power button (which Garmin repaired in record time) it hasn't missed a beat.

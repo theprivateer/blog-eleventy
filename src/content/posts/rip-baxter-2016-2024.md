@@ -7,7 +7,7 @@ created_at: 2025-01-08T04:50:22+10:00
 updated_at: 2025-01-08T04:50:22+10:00
 metadata:
     title: null
-    description: 'Remembering Baxter, our much-loved King Charles Cavalier Spaniel, and the painful goodbye we had to make from afar after his sudden decline.'
+    description: 'Baxter was our much-loved King Charles Cavalier Spaniel from 2016 to 2024. This is the story of his sudden decline and our painful goodbye from afar.'
 ---
 
 ![Baxter, a King Charles Cavalier Spaniel, lying on a wooden deck](/assets/images/dT7pqRyOEzmaOwEAKFCO2UdDAgVVuiXdqCvbIGmX.webp)

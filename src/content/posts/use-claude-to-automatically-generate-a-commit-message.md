@@ -7,7 +7,7 @@ created_at: 2026-03-12T14:06:41+10:00
 updated_at: 2026-04-07T09:27:10+10:00
 metadata:
     title: null
-    description: 'I wrote a shell function that sends staged Git changes to Claude and returns a commit message, with a spinner and sensible diff limits.'
+    description: 'I wrote a shell function that turns staged Git changes into a Claude-generated commit message. Here’s how it handles prompts, diff limits and progress feedback.'
 ---
 
 My Git commits will never have "WIP" message again. Loving this simple-but-effective use-case for Claude:

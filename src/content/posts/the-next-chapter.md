@@ -7,7 +7,7 @@ created_at: 2026-01-13T20:52:07+10:00
 updated_at: 2026-02-15T17:41:34+10:00
 metadata:
     title: null
-    description: 'After seven months away from Rex Software, I’m rested, clearer about what matters and looking for the right long-term engineering leadership role.'
+    description: 'Seven months away from Rex Software gave me the rest and clarity I needed. I’m now looking for the right long-term engineering leadership role.'
 ---
 
 It's been almost seven months since I stepped away from [Rex Software](https://rexsoftware.com). Over that time, I've taken the chance to reset, learn, and spend more time with my family. It's been invaluable, but now I'm ready to dive back in.

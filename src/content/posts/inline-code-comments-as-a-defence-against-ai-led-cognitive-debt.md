@@ -7,7 +7,7 @@ created_at: 2026-05-13T13:15:45+10:00
 updated_at: 2026-05-13T13:37:05+10:00
 metadata:
     title: null
-    description: 'I’m using inline code comments to preserve the reasoning AI-assisted work tends to lose, giving future reviewers more than unexplained output.'
+    description: 'AI can produce working code without preserving the reasoning behind it. Here’s how inline comments can leave future reviewers more than unexplained output.'
 ---
 
 Andrew Cairns recently published [an article on cognitive debt](https://acairns.co.uk/posts/cognitive-debt) that I'd recommend reading in full before this one. It put a name on something I'd been circling for a while without quite articulating, and it sent me back to a few of the threads in my [earlier post on the risks of AI-led development](https://philstephens.com/blog/the-risks-of-adopting-ai-led-development-my-humble-opinion).

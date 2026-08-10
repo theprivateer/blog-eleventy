@@ -7,7 +7,7 @@ created_at: 2024-01-10T10:00:00+10:00
 updated_at: 2026-02-06T16:00:21+10:00
 metadata:
     title: null
-    description: 'Here’s how I installed Jekyll on macOS Sonoma with chruby and ruby-install, avoiding the outdated system version of Ruby.'
+    description: 'The Ruby bundled with macOS Sonoma is too old for a comfortable Jekyll setup. Here’s how I installed a current version with chruby and ruby-install.'
 ---
 
 I use a Mac, and whilst macOS ships with a copy of Ruby I immediately ran into issues trying to install Jekyll (mostly around Ruby being out of date). Typically I would just reach for [Homebrew](https://brew.sh) and install the latest version of Ruby with something like `brew install ruby` but in this instance that doesn’t work as well as you might think.

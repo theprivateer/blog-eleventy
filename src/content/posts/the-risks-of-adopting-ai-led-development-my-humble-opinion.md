@@ -7,7 +7,7 @@ created_at: 2026-04-21T13:07:12+10:00
 updated_at: 2026-04-21T13:10:13+10:00
 metadata:
     title: null
-    description: 'AI-led development can weaken review, stunt junior growth and produce convincing complexity. These are the delivery risks I think teams need to confront.'
+    description: 'AI-led development can weaken review, limit junior growth and produce convincing complexity. Here are the delivery risks I think teams need to confront.'
 ---
 
 There is a lot of pressure right now to adopt AI-led development practices, and most of it is coming from outside engineering. Boards want productivity gains. Investors want AI in the pitch deck. CEOs want to be seen leading the transition rather than catching up to it. The question that tends to get skipped in all of that is the one engineering leaders actually have to answer: if we change how our teams work, what can go wrong, and what do we do about it?

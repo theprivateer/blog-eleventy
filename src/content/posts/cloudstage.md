@@ -7,7 +7,7 @@ created_at: 2017-06-27T10:00:00+10:00
 updated_at: 2026-02-07T10:05:48+10:00
 metadata:
     title: null
-    description: 'I built Cloudstage to create temporary staging subdomains that point at any IP address or domain, with no signup and nothing to configure.'
+    description: 'Cloudstage creates a temporary staging subdomain for any IP address or domain. Here’s why I built it with no signup and nothing to configure.'
 ---
 
 I am a constant tinkerer, always messing about with ideas for side-projects and seeing what sticks.  One of the barriers - albeit very small - to trying code out in the wild is the ability to get a quick domain name for testing.  PaaS providers such as [Heroku](https://www.heroku.com/) and [Pagoda Box](https://pagodabox.io/) will give you a simple and memorable default domain when you spin up a new service, but there are plenty other players in the market.

@@ -7,7 +7,7 @@ created_at: 2017-10-03T10:00:00+10:00
 updated_at: 2017-10-03T10:00:00+10:00
 metadata:
     title: null
-    description: 'Before I invest in an idea, I test the need, market, competition, pricing, costs and whether I still want to run it once the building is done.'
+    description: 'A product idea deserves scrutiny before it deserves months of work. Here’s how I test the need, market, competition, costs and my appetite to run it.'
 ---
 
 If you've got a business or product idea it's easy to get carried away and invest time and often money without really considering the viability of the idea - until it's too late.

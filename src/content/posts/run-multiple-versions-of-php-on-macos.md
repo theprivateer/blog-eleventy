@@ -7,7 +7,7 @@ created_at: 2022-08-17T10:00:00+10:00
 updated_at: 2026-02-06T16:00:50+10:00
 metadata:
     title: null
-    description: 'Here’s how I installed PHP 5.6 alongside modern PHP on macOS and added simple shell aliases for switching versions with Homebrew.'
+    description: 'One legacy project still needed PHP 5.6 on a modern Mac. Here’s how Homebrew and a few shell aliases let me install and switch between versions.'
 ---
 
 This weekend I wanted to take a look at a Laravel project I worked on back in 2016 (and haven't touched since). I checked-out the code to my MacBook Pro and ran `composer install` only to find that the project was not compatible with the version of PHP I had installed (v8.1.5).  Worse still, looking back at the dependencies, this version of Laravel required PHP 5.6.

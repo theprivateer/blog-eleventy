@@ -7,7 +7,7 @@ created_at: 2021-09-06T10:00:00+10:00
 updated_at: 2026-02-07T08:22:31+10:00
 metadata:
     title: null
-    description: 'My 2021 VS Code setup for PHP and Laravel, including the theme, font, minimal interface, settings and extensions I rely on.'
+    description: 'My VS Code setup is deliberately small and tailored to PHP and Laravel. Here are the 2021 theme, font, settings and extensions I rely on.'
 ---
 
 I mainly write code in PHP, and for my day job I predominantly lean on [PhpStorm](https://www.jetbrains.com/phpstorm/). However more recently I have been making concerted effort to try and replicate my workflow in [Visual Studio Code](https://code.visualstudio.com) for personal projects.

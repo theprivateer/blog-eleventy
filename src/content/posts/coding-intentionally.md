@@ -7,7 +7,7 @@ created_at: 2022-08-29T10:00:00+10:00
 updated_at: 2022-08-29T10:00:00+10:00
 metadata:
     title: null
-    description: 'Rebuilding my site without a CSS framework reminded me how much I value small, semantic code and understanding every decision in the stack.'
+    description: 'I rebuilt my website without a CSS framework and enjoyed understanding every line again. It reminded me why small, semantic code is worth the effort.'
 ---
 
 I recently rebuilt this website.

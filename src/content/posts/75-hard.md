@@ -7,7 +7,7 @@ created_at: 2022-12-31T10:00:00+10:00
 updated_at: 2026-02-07T10:14:40+10:00
 metadata:
     title: null
-    description: 'I’m taking on the 75 Hard challenge: 75 days of strict rules around food, exercise, water, reading and daily progress photos.'
+    description: 'I’m taking on 75 Hard for the next 75 days. Here are the rules I’ll follow for food, exercise, water, reading and daily progress photos.'
 ---
 
 As the New Year rapidly approaches I've been considering my resolutions for 2023 and have landed on a challenge that I have considered on a number of occasions in the past.

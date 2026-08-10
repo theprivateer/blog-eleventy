@@ -7,7 +7,7 @@ created_at: 2024-06-16T10:00:00+10:00
 updated_at: 2026-02-07T10:12:32+10:00
 metadata:
     title: null
-    description: 'I’m trying Couch to 5K after years of knee pain, with a slower build-up, a changed running style and zero-drop shoes.'
+    description: 'Years of knee pain convinced me that running was over. Here’s why I’m trying Couch to 5K with a slower build-up, a different stride and zero-drop shoes.'
 ---
 
 Whilst I consider myself fairly active and reasonably fit, I’ve always identified as ‘not a runner’. Historically this has been down to having ‘bad knees’ that always seem to flair up after running more than a 100 metres, and getting shin splints pretty quickly after that.

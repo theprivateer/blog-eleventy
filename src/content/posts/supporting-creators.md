@@ -7,7 +7,7 @@ created_at: 2025-05-07T14:41:30+10:00
 updated_at: 2026-04-01T12:57:51+10:00
 metadata:
     title: null
-    description: 'I’m paying to support independent voices whose work challenges the technology industry, starting with Tech Won’t Save Us and Joan Westenberg.'
+    description: 'I’ve started paying for independent voices that challenge the technology industry. Here’s why I chose Tech Won’t Save Us and Joan Westenberg first.'
 ---
 
 I follow quite a few independent content creators via RSS, email newsletter and podcast. I am increasingly getting greater value from these than I do from more mainstream sources, so I have decided to do the right thing and start supporting some financially.

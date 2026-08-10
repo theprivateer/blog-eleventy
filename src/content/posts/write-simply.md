@@ -7,7 +7,7 @@ created_at: 2025-02-03T02:40:47+10:00
 updated_at: 2026-04-01T12:58:47+10:00
 metadata:
     title: null
-    description: 'I keep making writing harder than it needs to be. Shorter pieces, simpler language and less pressure to polish everything may be the way through.'
+    description: 'I keep making writing harder than it needs to be. My way through may be shorter pieces, simpler language and less pressure to polish every thought.'
 ---
 
 I’ll admit I’ve been struggling to build my writing habit over the last few weeks. I’ve realised that the issue has generally been three-fold:

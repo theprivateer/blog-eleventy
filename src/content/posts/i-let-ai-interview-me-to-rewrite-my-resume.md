@@ -7,7 +7,7 @@ created_at: 2026-04-01T08:59:38+10:00
 updated_at: 2026-04-01T09:48:40+10:00
 metadata:
     title: null
-    description: 'I let AI interview me about my career, and the questions uncovered the impact, context and stronger story that my old resume had buried.'
+    description: 'I let AI interview me before rewriting my resume. The questions uncovered career impact, useful context and a stronger story than the old document told.'
 ---
 
 I've been job hunting for about two months now. If you've read my earlier posts, you'll know it hasn't been smooth. The rejections have been consistent, the feedback generic, and the pattern frustratingly clear: my experience isn't the problem - my resume is.

@@ -7,7 +7,7 @@ created_at: 2025-01-07T22:19:00+10:00
 updated_at: 2025-01-07T22:19:00+10:00
 metadata:
     title: null
-    description: 'My 2024 brought work changes, a family trip to the UK and real progress with weight, running and recovery—alongside another shift in my relationship with tech.'
+    description: 'My 2024 included work changes, a family trip to the UK and real progress with weight and running. It also changed my relationship with technology again.'
 ---
 
 This is a little overdue as we spent the New Year period aboard a cruise ship, sailing the South Pacific and unplugged as much as possible. On the flip-side this has given me a little more time to reflect on the year that was and how it might shape the year ahead.

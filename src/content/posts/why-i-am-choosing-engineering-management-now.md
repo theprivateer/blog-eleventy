@@ -7,7 +7,7 @@ created_at: 2026-02-05T10:51:18+10:00
 updated_at: 2026-02-21T15:47:45+10:00
 metadata:
     title: null
-    description: 'After 20 years close to the code, I’m choosing engineering management because helping people and teams do their best work is where I add most value.'
+    description: 'After 20 years close to the code, I’m choosing engineering management. Here’s why helping people and teams do their best work is where I add the most value.'
 ---
 
 I'm [back on the job market](https://philstephens.com/blog/the-next-chapter), and over the past few weeks I have been having a lot of conversations with recruiters, hiring managers, and engineering leaders. Different companies, different roles, different contexts, but many of the same questions.

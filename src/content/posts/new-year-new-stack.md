@@ -7,7 +7,7 @@ created_at: 2024-01-09T10:00:00+10:00
 updated_at: 2024-01-09T10:00:00+10:00
 metadata:
     title: null
-    description: 'I moved this blog from Jigsaw and Netlify to Jekyll and GitHub Pages, trading flexibility I no longer needed for a simpler free setup.'
+    description: 'I moved this blog from Jigsaw and Netlify to Jekyll and GitHub Pages. Here’s why I traded unused flexibility for a simpler setup that costs nothing.'
 ---
 
 It’s time to have another crack at maintaining this blog - which means it’s as good a time as any to give it a bit of a makeover.

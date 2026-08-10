@@ -7,7 +7,7 @@ created_at: 2017-07-20T10:00:00+10:00
 updated_at: 2026-01-05T14:55:14+10:00
 metadata:
     title: null
-    description: 'Three books challenged how I think about remote work, entrepreneurship and creative purpose—and what I want from my own side projects.'
+    description: 'Three books changed how I think about remote work, entrepreneurship and creative purpose. Here’s what each one taught me about my own side projects.'
 ---
 
 I used to be a fairly prolific reader of books, regularly devouring entire texts in a single sitting.  More recently though my reading has suffered as the forces of work, family and health (and Netflix) have all vied for my attention.

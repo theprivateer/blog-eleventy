@@ -7,7 +7,7 @@ created_at: 2022-09-26T10:00:00+10:00
 updated_at: 2022-09-26T10:00:00+10:00
 metadata:
     title: null
-    description: 'A competition form decided I wasn’t a real person because I had no social media profile, which says something uncomfortable about online identity.'
+    description: 'A competition form decided I wasn’t a real person because I had no social media profile. That says something uncomfortable about identity online.'
 ---
 
 Last week I received an email from a brand that I like and respect advertising a competition they are running. I very rarely enter these sorts of things, but in this instance I decided to go for it.

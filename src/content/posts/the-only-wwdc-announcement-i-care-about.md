@@ -7,7 +7,7 @@ created_at: 2023-06-08T10:00:00+10:00
 updated_at: 2026-02-07T10:13:22+10:00
 metadata:
     title: null
-    description: 'The WWDC feature I actually want is watchOS 10 support for cycling sensors, bringing Apple Watch closer to replacing a dedicated bike computer.'
+    description: 'One WWDC announcement matters more to me than the rest: cycling-sensor support in watchOS 10. It brings Apple Watch closer to replacing my bike computer.'
 ---
 
 Of all the announcements that came out of Apple's [WWDC keynote](https://podcasts.apple.com/au/podcast/apple-events-video/id275834665?i=1000615768968) earlier this week, the thing that I was genuinely excited about dropped in at the 1:10:25 mark. Not futuristic AR headsets or blisteringly fast pro workstations, but the news that watchOS 10 will support connecting cycling sensors to your Apple Watch and having that data processed natively in the Workout app.

@@ -7,7 +7,7 @@ created_at: 2022-07-01T10:00:00+10:00
 updated_at: 2026-02-07T10:04:16+10:00
 metadata:
     title: null
-    description: 'I’m closing the public version of Subworthy after six months. The daily emails end on 11 July, but I’ll keep running it for myself.'
+    description: 'I’m closing the public version of Subworthy after six months. Here’s why the daily emails are ending on 11 July, even though I’ll keep using it myself.'
 ---
 
 I originally started [Subworthy](/blog/introducing-subworthy/) to scratch a very personal itch - to control and focus my media consumption. After using it privately for over half a year I decided to open it up to anyone that that wanted to register for an account.

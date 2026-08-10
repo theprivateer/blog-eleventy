@@ -7,7 +7,7 @@ created_at: 2025-02-07T22:53:11+10:00
 updated_at: 2026-04-01T12:58:20+10:00
 metadata:
     title: null
-    description: 'I’ve switched off Apple Intelligence because I do not use its tools and its notification summaries add nothing. I may try it again later.'
+    description: 'I’ve turned off Apple Intelligence because its tools add nothing to my day. Here’s what I stopped using—and what might persuade me to try it again.'
 ---
 
 Today I turned off **Apple Intelligence** on all of my devices. 

@@ -7,7 +7,7 @@ created_at: 2026-04-01T09:49:09+10:00
 updated_at: 2026-04-01T09:49:18+10:00
 metadata:
     title: null
-    description: 'The four ways I actually use AI coding tools: accelerating familiar work, learning new stacks, prototyping ideas and writing disposable scripts.'
+    description: 'AI coding tools are useful to me in four specific situations. Here’s how I use them for familiar work, new stacks, prototypes and disposable scripts.'
 ---
 
 As I apply for new roles, I keep getting asked the same question: how do I use AI coding tools? It comes up in almost every conversation now - and each time, I find myself explaining the same framework. So I figured I'd document it.

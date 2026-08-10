@@ -7,7 +7,7 @@ created_at: 2022-03-01T10:00:00+10:00
 updated_at: 2026-02-07T10:04:29+10:00
 metadata:
     title: null
-    description: 'I added keyword and regular-expression filters to Subworthy so each subscription can exclude the posts you never want in your daily issue.'
+    description: 'Subworthy subscriptions can now filter out posts you never want to receive. Here’s how keyword and regular-expression rules keep daily issues relevant.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy/).**_

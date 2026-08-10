@@ -7,7 +7,7 @@ created_at: 2024-11-08T06:04:00+10:00
 updated_at: 2024-11-08T06:04:00+10:00
 metadata:
     title: null
-    description: 'Laravel Nightwatch could bring the monitoring tools I use every day into one Laravel-native service. These are my first impressions from Laracon AU.'
+    description: 'Laravel Nightwatch could put the monitoring tools I use every day into one Laravel-native service. These are my first impressions from Laracon AU.'
 ---
 
 This year Laracon AU is in Brisbane, and today I was lucky enough to attend the first day in person. The schedule was packed with a whole bunch of fantastic presentations, but the main buzz is around [Laravel Nightwatch](https://nightwatch.laravel.com), the new first-party monitoring and observability platform that was announced today.

@@ -7,7 +7,7 @@ created_at: 2026-01-06T07:34:06+10:00
 updated_at: 2026-04-01T12:57:39+10:00
 metadata:
     title: null
-    description: 'After three years and nine months, I’m leaving Rex. First comes a proper break with my family, then I’ll decide what the next chapter looks like.'
+    description: 'I’m leaving Rex after three years and nine months. Before deciding what comes next, I’m taking a proper break and spending time with my family.'
 ---
 
 After 3 years and 9 months I have decided to move on from Rex. It has been an exciting roller-coaster ride, seeing the company change and grow over such a relatively short period of time.

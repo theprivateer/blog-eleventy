@@ -7,7 +7,7 @@ created_at: 2024-10-29T00:00:00+10:00
 updated_at: 2024-10-29T00:00:00+10:00
 metadata:
     title: null
-    description: 'Why I replaced my Bose earbuds with AirPods Pro 2, and what I’ve noticed about their sound, connectivity, Apple integration and hearing features.'
+    description: 'I replaced my Bose earbuds with AirPods Pro 2. Here’s what won me over, from sound and connectivity to Apple integration and hearing features.'
 ---
 
 Earlier this year I was looking to upgrade from my 3rd generation AirPods to something with noise cancellation. At the time I was having a sort of existential crisis around being so embedded in the Apple ecosystem so I was railing against getting a set of AirPods Pro (they were also the most expensive option at the time), so I opted for a set of [Bose QuietComfort Ultra Earbuds](https://www.bose.com/p/earbuds/bose-quietcomfort-ultra-earbuds/QCUE-HEADPHONEIN.html?dwvar_QCUE-HEADPHONEIN_color=BLACK).

@@ -7,7 +7,7 @@ created_at: 2024-12-16T22:58:46+10:00
 updated_at: 2026-02-07T10:12:14+10:00
 metadata:
     title: null
-    description: 'I explain the cycling Eddington Number, what it reveals about consistency and why a true score needs your complete ride history.'
+    description: 'My cycling Eddington Number measures consistency rather than outright speed or distance. Here’s how it works and why incomplete ride history distorts the result.'
 ---
 
 I recently came across an interesting cycling metric known as the **Eddington Number**, a number devised to measure a cyclist’s long-distance riding achievements.

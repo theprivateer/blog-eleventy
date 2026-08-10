@@ -7,7 +7,7 @@ created_at: 2022-03-13T10:00:00+10:00
 updated_at: 2026-02-07T08:22:04+10:00
 metadata:
     title: null
-    description: 'Warp replaced iTerm on my Mac within minutes. Its command blocks, editing tools and thoughtful interface make the terminal feel genuinely modern.'
+    description: 'Warp replaced iTerm on my Mac within minutes. Here’s how command blocks, better editing and a thoughtful interface made the terminal feel modern.'
 ---
 
 For years I have been a happy iTerm user (and before that, the native Mac Terminal.app). I only really signed up to request access to [Warp](https://www.warp.dev) to see what all the hype was about.

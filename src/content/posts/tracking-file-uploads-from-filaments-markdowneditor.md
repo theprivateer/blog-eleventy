@@ -7,7 +7,7 @@ created_at: 2026-03-27T08:31:20+10:00
 updated_at: 2026-03-27T09:12:01+10:00
 metadata:
     title: null
-    description: 'Here’s how I track files uploaded through Filament’s MarkdownEditor, associate them with content and safely clean up unused assets.'
+    description: 'Filament’s MarkdownEditor can upload files without recording who uses them. Here’s how I track each asset, associate it with content and clean it up safely.'
 ---
 
 The `MarkdownEditor` component that ships with [Filament](https://filamentphp.com) handles file uploads out of the box. Drop an image in, it gets stored to disk, and a URL is inserted into your markdown. Simple enough.

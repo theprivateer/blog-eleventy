@@ -7,7 +7,7 @@ created_at: 2017-07-18T10:00:00+10:00
 updated_at: 2026-02-06T16:02:36+10:00
 metadata:
     title: null
-    description: 'In part one, I use Spatie Tags and CommonMark to find inline hashtags, turn them into links and keep them in sync in Laravel.'
+    description: 'My Laravel microblog needed hashtags embedded naturally in Markdown. Here’s how Spatie Tags and CommonMark find, link and synchronise them.'
 ---
 
 One of the neat little features of my homegrown microblogging platform is that is has a nifty hashtag autocomplete system like you can find on Twitter and Instagram - you hit the `#` key and as you continue typing, suggestions of existing tags appear in a dropdown menu.

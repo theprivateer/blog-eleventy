@@ -7,7 +7,7 @@ created_at: 2022-01-09T10:00:00+10:00
 updated_at: 2026-02-07T10:05:13+10:00
 metadata:
     title: null
-    description: 'I built Subworthy to turn RSS subscriptions into one scheduled daily email, making it easier to read deliberately instead of checking feeds all day.'
+    description: 'Subworthy turns RSS subscriptions into one scheduled daily email. Here’s why I built it to replace constant feed checking with more deliberate reading.'
 ---
 
 _**Since writing this I have chosen to [shut down Subworthy](/blog/calling-time-on-subworthy).**_

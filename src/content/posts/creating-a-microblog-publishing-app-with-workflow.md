@@ -7,7 +7,7 @@ created_at: 2017-07-17T10:00:00+10:00
 updated_at: 2026-01-05T14:51:56+10:00
 metadata:
     title: null
-    description: 'Here’s how I used Workflow, Laravel and Passport to build a secure iPhone publishing flow for my self-hosted microblog.'
+    description: 'I wanted to publish to my self-hosted microblog directly from my iPhone. Here’s the secure Workflow, Laravel and Passport flow I built.'
 ---
 
 My homegrown micro-blogging platform is designed to work well on mobile, but I wanted a quick way to post in a more native way from my iPhone.  Enter [Workflow](https://workflow.is/), a powerful way to create custom actions on your iOS devices.

@@ -7,7 +7,7 @@ created_at: 2022-01-04T10:00:00+10:00
 updated_at: 2026-01-05T15:41:03+10:00
 metadata:
     title: null
-    description: 'I’m returning to three books that shaped my thinking in 2021, hoping a second reading will bring more focus, clarity and purpose to 2022.'
+    description: 'Three books shaped how I thought about 2021, so I’m reading them again. Here’s what I hope each one brings to a more focused and purposeful 2022.'
 ---
 
 In 2021 I set out to return to reading more.  Looking at my stats in Apple Books I managed to get through a decent library of books - both fiction and non-fiction - but there were three standout titles.

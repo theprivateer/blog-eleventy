@@ -7,7 +7,7 @@ created_at: 2024-12-13T15:44:00+10:00
 updated_at: 2024-12-13T15:44:00+10:00
 metadata:
     title: null
-    description: 'Most Apple Intelligence features leave me cold, but private, health-focused uses of AI could still make the technology genuinely valuable.'
+    description: 'Most of Apple Intelligence leaves me cold. Private, health-focused features are where I think Apple could make AI genuinely useful instead of merely novel.'
 ---
 
 Yesterday with iOS 18.2 Apple Intelligence was officially released in Australia. I acknowledge that it is Apple's current cornerstone feature, however I'm just not that excited by it.

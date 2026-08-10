@@ -7,7 +7,7 @@ created_at: 2024-12-18T17:32:02+10:00
 updated_at: 2026-02-06T15:59:47+10:00
 metadata:
     title: null
-    description: 'Here’s how I automatically register custom Twig functions and filters in Laravel using dedicated classes and predictable namespaces.'
+    description: 'My custom Twig functions and filters now register themselves automatically. Here’s the Laravel convention built around dedicated classes and namespaces.'
 ---
 
 I have used the [Twig](https://twig.symfony.com) templating engine in a number of large projects - particularly CMS-based platforms. Whilst I favour Laravel's built-in Blade engine, Twig is ideal for user-generated templates as it is fast and secure, only allowing execution of pre-defined functions.

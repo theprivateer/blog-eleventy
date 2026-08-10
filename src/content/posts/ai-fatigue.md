@@ -7,7 +7,7 @@ created_at: 2023-06-26T10:00:00+10:00
 updated_at: 2023-06-26T10:00:00+10:00
 metadata:
     title: null
-    description: 'I’m tired of the relentless AI pitches, rebrands and buzzwords. I miss products built around original ideas rather than an obligatory AI feature.'
+    description: 'The endless stream of AI pitches, rebrands and buzzwords has worn me down. I miss products built around original ideas instead of obligatory AI features.'
 ---
 
 It seems that every other tech story or product launch is about AI, and I'm getting kind of bored of it.

@@ -7,7 +7,7 @@ created_at: 2025-04-12T02:22:13+10:00
 updated_at: 2026-02-07T10:12:01+10:00
 metadata:
     title: null
-    description: 'I ran 10km without stopping for the first time. A year after struggling through Couch to 5K, longer races suddenly feel possible.'
+    description: 'I ran 10km without stopping for the first time. Here’s how a difficult Couch to 5K start became a milestone that makes longer races feel possible.'
 ---
 
 Last night I surprised myself by running 10km non-stop for the first time.

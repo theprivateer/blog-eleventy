@@ -7,7 +7,7 @@ created_at: 2017-07-21T10:00:00+10:00
 updated_at: 2026-02-06T16:02:17+10:00
 metadata:
     title: null
-    description: 'In part two, I add hashtag autocomplete with Algolia, Eloquent and a small jQuery textcomplete interface.'
+    description: 'Typing existing hashtags should be quick and consistent. Here’s how I added autocomplete with Algolia, Eloquent and jQuery Textcomplete.'
 ---
 
 **Part 1 of this tutorial can be found at [Creating an embedded hashtag system in Laravel - Part 1](/posts/creating-an-embedded-hashtag-system-in-laravel-part-1).**

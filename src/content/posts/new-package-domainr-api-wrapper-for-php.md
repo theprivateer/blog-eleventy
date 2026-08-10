@@ -7,7 +7,7 @@ created_at: 2017-07-28T10:00:00+10:00
 updated_at: 2026-02-06T16:01:49+10:00
 metadata:
     title: null
-    description: 'I published a PHP wrapper for Domainr that searches domains, checks availability and retrieves registrar links, with optional Laravel support.'
+    description: 'I published a PHP wrapper for the Domainr API. It searches domain names, checks availability, finds registrar links and includes optional Laravel support.'
 ---
 
 Following on from my [little side-project](https://github.com/theprivateer/domain-dictionary) from [a couple of days ago](/blog/building-a-dictionary-of-domain-names) I wanted to be able to dynamically check the availability of a given domain.  Originally I planned to use the AWS Route53 API as I was already familiar with it, but after a couple of tests with it I found that I would very quickly have my API connection throttled as I approached some very meager rate limits - not ideal if I planned to get the status of domains in batches in scheduled jobs.

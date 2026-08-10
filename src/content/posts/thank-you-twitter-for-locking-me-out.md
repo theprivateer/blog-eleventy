@@ -7,7 +7,7 @@ created_at: 2023-07-03T10:00:00+10:00
 updated_at: 2023-07-03T10:00:00+10:00
 metadata:
     title: null
-    description: 'I deleted Twitter but kept visiting a few accounts until its login wall finally broke the habit. For once, a hostile product decision helped.'
+    description: 'I deleted Twitter but kept visiting a handful of accounts out of habit. Its increasingly hostile login wall finally helped me stop for good.'
 ---
 
 On the weekend Twitter introduced its latest 'feature' - you cannot read public tweets [unless you have an account](https://techcrunch.com/2023/06/30/twitter-now-requires-an-account-to-view-tweets/). Whilst the internet collectively rolled its eyes, I let out a sigh of relief.

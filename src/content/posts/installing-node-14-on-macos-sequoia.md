@@ -7,7 +7,7 @@ created_at: 2025-01-22T00:09:58+10:00
 updated_at: 2026-02-06T15:59:31+10:00
 metadata:
     title: null
-    description: 'Here’s how I got Node 14 running on Apple Silicon with macOS Sequoia using Rosetta and NVM for an older project.'
+    description: 'An older project still needed Node 14, which would not install normally on macOS Sequoia. Here’s how Rosetta and NVM got it running on Apple Silicon.'
 ---
 
 I’m currently working on an older codebase that relies on Node 14 for a bunch of dependencies - the problem is you can no longer _easily_ install Node 14 (and earlier) on Apple computers with M-series chips, as they will always attempt to download the `arm64` version (which is only available for Node 16 onwards).

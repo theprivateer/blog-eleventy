@@ -7,7 +7,7 @@ created_at: 2020-11-13T10:00:00+10:00
 updated_at: 2026-02-06T16:01:29+10:00
 metadata:
     title: null
-    description: 'Here’s how I used a Jigsaw event listener and Intervention Image to resize oversized images after the site compiles.'
+    description: 'My Jigsaw build now resizes oversized source images automatically. Here’s how an event listener and Intervention Image process them after compilation.'
 ---
 
 I use [Jigsaw](https://jigsaw.tighten.co) to build this blog, and each post leads with a large featured image.  In many cases these images are just thematic and come from [Unsplash](https://unsplash.com), but my writing and publishing workflow doesn't include any image manipulation software to optimise the dimensions for the web.

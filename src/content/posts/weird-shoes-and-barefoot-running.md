@@ -7,7 +7,7 @@ created_at: 2024-05-01T10:00:00+10:00
 updated_at: 2026-02-07T10:12:43+10:00
 metadata:
     title: null
-    description: 'After 18 months in barefoot shoes, this is what changed in my walking and running—the benefits, drawbacks and awkward-looking footwear included.'
+    description: 'I’ve worn barefoot shoes for 18 months and changed how I walk and run. Here’s what improved, what did not and how I feel about the unusual footwear.'
 ---
 
 Last week my one of my daughter’s classmates told her that “your Dad has weird shoes” after seeing me at the school pick-up. My daughter didn’t want to say anything to us because she was worried I would be offended. The thing is, I _do_ have weird shoes - here’s why...

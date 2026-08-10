@@ -7,7 +7,7 @@ created_at: 2017-07-26T10:00:00+10:00
 updated_at: 2026-02-06T16:02:00+10:00
 metadata:
     title: null
-    description: 'I build a Laravel tool that combines dictionary words with Route 53 TLDs to generate and browse possible domain names.'
+    description: 'I wanted a faster way to discover memorable domain names. Here’s how I used Laravel, dictionary words and Route 53 TLDs to build one.'
 ---
 
 Yesterday I was thinking about what domain names are available that, including their extension, can create complete words.  For example, instead of `glorious.com` using `glorio.us`.  Obviously there are a _lot_ of words in the English language, and an ever-growing number of top level domain extensions available for registration, so the number of permutations must be massive. Being a developer and tinkerer, rather than searching for a service that no doubt already exists to discover these options I set myself a little challenge to build one myself.

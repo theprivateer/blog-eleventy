@@ -7,7 +7,7 @@ created_at: 2024-10-22T10:00:00+10:00
 updated_at: 2024-10-22T10:00:00+10:00
 metadata:
     title: null
-    description: 'My M4 iPad Pro kept disconnecting from a USB-C monitor whenever charging paused. Switching the display connection to HDMI solved it.'
+    description: 'My M4 iPad Pro disconnected from its USB-C monitor whenever charging paused. Here’s why switching the display connection to HDMI fixed it.'
 ---
 
 I recently upgraded from a 4th generation iPad Mini to an 11” iPad Pro M4 with the express intention of replacing my personal MacBook Pro (original 13” M1 with Touchpad)
