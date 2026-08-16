@@ -63,6 +63,19 @@ export default function (eleventyConfig) {
 
       return renderImage(tokens, index, options, environment, renderer);
     };
+
+    markdown.renderer.rules.link_open = (tokens, index, options, environment, renderer) => {
+      const href = tokens[index].attrGet("href");
+      const isAbsoluteLink = /^(?:[a-z][a-z\d+.-]*:)?\/\//i.test(href ?? "");
+
+      // This deliberately checks only for an absolute URL with a hostname; same-domain
+      // absolute links also open in a new tab, while relative site links stay in this tab.
+      if (isAbsoluteLink && new URL(href, SITE_URL).hostname) {
+        tokens[index].attrSet("target", "_blank");
+      }
+
+      return renderer.renderToken(tokens, index, options);
+    };
   });
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/robots.txt": "robots.txt" });

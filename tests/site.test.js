@@ -200,6 +200,15 @@ test("metadata title overrides only the document title", async () => {
   assert.match(fallbackPage, /<title>Phil Stephens \| Contact<\/title>/);
 });
 
+test("Markdown links use a new tab only for absolute URLs", async () => {
+  const aboutPage = await readFile(path.join(outputDirectory, "about/index.html"), "utf8");
+  const resumePage = await readFile(path.join(outputDirectory, "resume/index.html"), "utf8");
+
+  assert.match(aboutPage, /<a href="https:\/\/employmenthero\.com" target="_blank">Employment Hero<\/a>/);
+  assert.match(aboutPage, /<a href="\/category\/projects">occasional software side-project<\/a>/);
+  assert.match(resumePage, /<a href="https:\/\/philstephens\.com" target="_blank">philstephens\.com<\/a>/);
+});
+
 test("Open Graph metadata mirrors canonical page metadata without padding compact notes", async () => {
   const htmlFiles = (await filesBelow(outputDirectory)).filter((file) => file.endsWith(".html"));
   let publicPageCount = 0;
@@ -268,11 +277,11 @@ test("feeds identify themselves and use stable note pages as canonical entries",
   assert.equal(gravity.external_url, "https://www.gravitynotes.app/");
 });
 
-test("bare Markdown URLs become clickable links", async () => {
+test("bare Markdown URLs become clickable links that open in a new tab", async () => {
   const followPage = await readFile(path.join(outputDirectory, "follow/index.html"), "utf8");
 
-  assert.match(followPage, /<a href="https:\/\/philstephens\.com\/feed\/posts\/rss">https:\/\/philstephens\.com\/feed\/posts\/rss<\/a>/);
-  assert.match(followPage, /<a href="https:\/\/github\.com\/theprivateer">https:\/\/github\.com\/theprivateer<\/a>/);
+  assert.match(followPage, /<a href="https:\/\/philstephens\.com\/feed\/posts\/rss" target="_blank">https:\/\/philstephens\.com\/feed\/posts\/rss<\/a>/);
+  assert.match(followPage, /<a href="https:\/\/github\.com\/theprivateer" target="_blank">https:\/\/github\.com\/theprivateer<\/a>/);
 });
 
 test("code pages load Prism with the Twilight theme on demand", async () => {
